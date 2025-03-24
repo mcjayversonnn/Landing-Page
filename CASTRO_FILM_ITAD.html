@@ -23,6 +23,7 @@
             top: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -54,88 +55,163 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
             padding: 20px;
             margin-top: 80px; 
         }
 
-        .film-header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0B2545;
+        h1 {
+            font-size: 4em;
+            margin-bottom: 50px;
+            margin-top: 150px;
             color: #EEF4ED;
-            border-bottom: 5px solid #13315C;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px auto;
-            width: 97%;
-            margin-top: 80px; /* Adjust for nav-bar height */
-        }
-
-        .film-header h1 {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            text-align: center;
         }
 
         h2 {
             color: #EEF4ED;
             text-align: center;
-            font-size: 2em;
+            font-size: 2.5em;
             margin: 30px 0 20px;
             margin-bottom: 40px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
         }
 
-        .video-category {
-            margin-bottom: 40px;
-            background-color: #0B2545;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        .film-category {
+            margin-bottom: 50px;
         }
 
-        .video-sample {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #13315C;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .film-section {
             display: flex;
-            align-items: center;
+            flex-direction: column;
+            align-items: flex-start;
+            background-color: #0B2545;
+            padding: 25px;
+            border-radius: 12px;
+            margin-bottom: 40px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
         }
 
-        .video-sample p {
-            margin: 0 0 0 20px;
-            font-weight: bold;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-            flex: 1;
-            font-size: 2em;
+        .film-media {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
         }
 
-        .video-sample video {
-            width: 100%;
-            max-width: 700px; 
+        .film-poster {
+            width: 200px;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .film-video {
+            width: 500px;
+            border-radius: 12px;
+        }
+
+        .film-content {
+            text-align: left;
+            color: #EEF4ED;
+        }
+
+        .film-content h3 {
+            font-size: 1.8em;
+            margin-bottom: 10px;
+        }
+
+        .film-content p {
+            font-size: 1em;
+            margin: 5px 0;
         }
 
         .btn {
             background-color: #0B2545;
             color: #EEF4ED;
-            padding: 8px;
-            border-radius: 20px;
+            padding: 12px 20px;
+            border-radius: 25px;
             text-align: center;
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s, color 0.3s;
-            margin-bottom: 10px;
         }
 
         .btn:hover {
             background-color: #007bff;
             color: #EEF4ED;
+        }
+
+        .film-columns {
+            display: flex;
+            justify-content: space-between;
+            gap: 20px;
+        }
+
+        .film-category {
+            flex: 1;
+            background-color: #0B2545;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .film-section {
+            margin-bottom: 30px;
+        }
+
+        .film-media {
+            display: flex;
+            align-items: flex-start;
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .film-media img {
+            width: 150px;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 12px;
+        }
+
+        .film-media video {
+            width: 400px;
+            border-radius: 12px;
+        }
+
+        .film-content {
+            text-align: left;
+            color: #EEF4ED;
+        }
+
+        .film-content h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .film-content p {
+            font-size: 0.9em;
+            margin: 5px 0;
+        }
+
+        .btn {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 12px 20px;
+            border-radius: 25px;
+            text-align: center;
+            font-weight: bold;
             text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
         }
     </style>
 </head>
@@ -159,53 +235,109 @@
         <h1>The Films That Speak to Me</h1>
     </div>
     <div class="container">
-        <div class="video-category">
-            <h2>TV Shows</h2>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/Stranger Things.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: Stranger Things</p>
+        <div class="film-columns">
+            <div class="film-category tv-shows">
+                <h2>TV Shows</h2>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster1.jpg" alt="Stranger Things" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/Stranger Things.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>Stranger Things</h3>
+                        <p><strong>Category:</strong> Sci-Fi, Horror, Mystery</p>
+                        <p><strong>Synopsis:</strong> A group of kids in the 1980s uncover supernatural mysteries in their small town.</p>
+                        <p><strong>Director:</strong> The Duffer Brothers</p>
+                        <p><strong>Stars:</strong> Millie Bobby Brown, Finn Wolfhard</p>
+                    </div>
+                </div>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster2.jpg" alt="Alice in Borderland" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/Alice in Borderland.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>Alice in Borderland</h3>
+                        <p><strong>Category:</strong> Sci-Fi, Thriller, Drama</p>
+                        <p><strong>Synopsis:</strong> A gamer and his friends find themselves in a deadly game of survival in an alternate Tokyo.</p>
+                        <p><strong>Director:</strong> Shinsuke Sato</p>
+                        <p><strong>Stars:</strong> Kento Yamazaki, Tao Tsuchiya</p>
+                    </div>
+                </div>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster3.jpg" alt="All of Us Are Dead" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/All of Us Are Dead.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>All of Us Are Dead</h3>
+                        <p><strong>Category:</strong> Horror, Mystery, Thriller</p>
+                        <p><strong>Synopsis:</strong> A high school becomes ground zero for a zombie virus outbreak.</p>
+                        <p><strong>Director:</strong> Lee Jae-kyoo</p>
+                        <p><strong>Stars:</strong> Park Ji-hu, Yoon Chan-young</p>
+                    </div>
+                </div>
             </div>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/Alice in Borderland.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: Alice in Borderland</p>
-            </div>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/All of Us Are Dead.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: All of Us Are Dead</p>
-            </div>
-        </div>
 
-        <div class="video-category">
-            <h2>Movies</h2>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/The Hows of Us.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: The How's of Us</p>
-            </div>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/Don't Breathe 2.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: Don't Breathe 2</p>
-            </div>
-            <div class="video-sample">
-                <video controls loop>
-                    <source src="video/Unlocked.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
-                <p>Title: Unlocked</p>
+            <div class="film-category movies">
+                <h2>Movies</h2>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster4.jpg" alt="The Hows of Us" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/The Hows of Us.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>The Hows of Us</h3>
+                        <p><strong>Category:</strong> Romantic, Comedy-Drama</p>
+                        <p><strong>Synopsis:</strong> A couple struggles to keep their relationship alive while chasing their dreams.</p>
+                        <p><strong>Director:</strong> Cathy Garcia-Molina</p>
+                        <p><strong>Stars:</strong> Kathryn Bernardo, Daniel Padilla</p>
+                    </div>
+                </div>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster5.jpg" alt="Don't Breathe 2" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/Don't Breathe 2.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>Don't Breathe 2</h3>
+                        <p><strong>Category:</strong> Horror, Thriller</p>
+                        <p><strong>Synopsis:</strong> A blind veteran must protect a young girl from kidnappers.</p>
+                        <p><strong>Director:</strong> Rodo Sayagues</p>
+                        <p><strong>Stars:</strong> Stephen Lang, Madelyn Grace</p>
+                    </div>
+                </div>
+                <div class="film-section">
+                    <div class="film-media">
+                        <img src="images/poster6.jpg" alt="Unlocked" class="film-poster">
+                        <video controls loop class="film-video">
+                            <source src="video/Unlocked.mp4" type="video/mp4">
+                            Your browser does not support the video tag.
+                        </video>
+                    </div>
+                    <div class="film-content">
+                        <h3>Unlocked</h3>
+                        <p><strong>Category:</strong> Psychological Thriller</p>
+                        <p><strong>Synopsis:</strong> A woman’s life is turned upside down after losing her smartphone.</p>
+                        <p><strong>Director:</strong> Kim Tae-joon</p>
+                        <p><strong>Stars:</strong> Chun Woo-hee, Im Si-wan</p>
+                    </div>
+                </div>
             </div>
         </div>
 

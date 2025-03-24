@@ -23,6 +23,7 @@
             top: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -53,83 +54,86 @@
             color: #EEF4ED;
         }
 
-        .container {
-            max-width: 1200px;
+        .beat-container {
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
-            margin-top: 80px;
+            padding: 100px 20px 50px;
         }
 
-        .beat-header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0B2545;
+        h1 {
+            font-size: 4em;
+            margin-bottom: 50px;
             color: #EEF4ED;
-            border-bottom: 5px solid #13315C;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin: 10px auto;
-            width: 97%;
-            margin-top: 80px;
-        }
-
-        .beat-header h1 {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-        }
-
-        h2 {
-            color: #EEF4ED;
-            text-align: center;
-            font-size: 2em;
-            margin: 10px 0 20px;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
+            text-align: center;
         }
 
-        .music-category {
-            margin-bottom: 40px;
+        .beat-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 20px;
+        }
+
+        .beat-card {
             background-color: #0B2545;
-            padding: 20px;
             border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            transition: transform 0.3s, box-shadow 0.3s;
         }
 
-        .audio-sample {
-            margin: 10px 0;
-            padding: 10px;
-            background-color: #13315C;
-            border-radius: 5px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        .beat-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.5);
         }
 
-        .audio-sample p {
-            margin: 0 0 10px;
-            font-weight: bold;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
-        }
-
-        .audio-sample audio {
+        .beat-card img {
             width: 100%;
+            height: 200px;
+            object-fit: cover;
+        }
+
+        .beat-card-content {
+            padding: 20px;
+        }
+
+        .beat-card-content h3 {
+            font-size: 1.5em;
+            margin: 10px 0;
+            color: #EEF4ED;
+        }
+
+        .beat-card-content p {
+            font-size: 0.9em;
+            color: #EEF4ED;
+            margin-bottom: 15px;
+        }
+
+        .beat-card-content audio {
+            width: 100%;
+            margin-top: 15px;
         }
 
         .btn {
             background-color: #0B2545;
             color: #EEF4ED;
-            padding: 8px;
+            padding: 10px;
             border-radius: 20px;
             text-align: center;
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s, color 0.3s;
-            margin-bottom: 10px;
         }
 
         .btn:hover {
             background-color: #007bff;
             color: #EEF4ED;
             text-decoration: none;
+        }
+
+        .nav-buttons {
+            margin-top: 50px;
         }
     </style>
 </head>
@@ -149,128 +153,158 @@
             <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
-    <div class="beat-header">
-        <h1>My Musical Confessions</h1>
-    </div>
-    <div class="container">
-        <div class="music-category">
-            <h2>R&B</h2>
-            <div class="audio-sample">
-                <p>Artist: The Weeknd - Title: After Hours</p>
-                <audio controls loop>
-                    <source src="music/After Hours.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+    <div class="beat-container">
+        <h1>The Musics That Define Me</h1>
+
+        <h2>R&B</h2>
+        <div class="beat-grid">
+            <div class="beat-card">
+                <img src="images/artist1.jpg" alt="The Weeknd - After Hours">
+                <div class="beat-card-content">
+                    <h3>The Weeknd - After Hours</h3>
+                    <p>The Weeknd is a Canadian singer known for his unique blend of R&B and pop. "After Hours" is a hauntingly beautiful track from his critically acclaimed album of the same name.</p>
+                    <audio controls loop>
+                        <source src="music/After Hours.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Bruno Major - Title: Easily</p>
-                <audio controls loop>
-                    <source src="music/Easily.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist2.jpg" alt="Bruno Major - Easily">
+                <div class="beat-card-content">
+                    <h3>Bruno Major - Easily</h3>
+                    <p>Bruno Major is a British singer-songwriter known for his soulful voice and heartfelt lyrics. "Easily" is a soothing track that explores themes of love and vulnerability.</p>
+                    <audio controls loop>
+                        <source src="music/Easily.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Frank Ocean - Title: Ivy</p>
-                <audio controls loop>
-                    <source src="music/Ivy.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist3.jpg" alt="Frank Ocean - Ivy">
+                <div class="beat-card-content">
+                    <h3>Frank Ocean - Ivy</h3>
+                    <p>Frank Ocean is an American singer-songwriter celebrated for his introspective and experimental music. "Ivy" is a nostalgic track that reflects on love and heartbreak.</p>
+                    <audio controls loop>
+                        <source src="music/Ivy.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Daniel Caesar - Title: Hold Me Down</p>
-                <audio controls loop>
-                    <source src="music/Hold Me Down.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <p>Artist: Sonder - Title: One Night Only</p>
-                <audio controls loop>
-                    <source src="music/One Night Only.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist4.jpg" alt="Daniel Caesar - Hold Me Down">
+                <div class="beat-card-content">
+                    <h3>Daniel Caesar - Hold Me Down</h3>
+                    <p>Daniel Caesar is a Canadian singer-songwriter known for his soulful voice and emotional lyrics. "Hold Me Down" is a powerful track that explores themes of love and devotion.</p>
+                    <audio controls loop>
+                        <source src="music/Hold Me Down.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
         </div>
 
-        <div class="music-category">
-            <h2>Hip-Hop</h2>
-            <div class="audio-sample">
-                <p>Artist: Kendrick Lamar - Title: HUMBLE.</p>
-                <audio controls loop>
-                    <source src="music/HUMBLE..mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+        <h2>Hip-Hop</h2>
+        <div class="beat-grid">
+            <div class="beat-card">
+                <img src="images/artist6.jpg" alt="Kendrick Lamar - HUMBLE.">
+                <div class="beat-card-content">
+                    <h3>Kendrick Lamar - HUMBLE.</h3>
+                    <p>Kendrick Lamar is an American rapper and songwriter known for his thought-provoking lyrics and powerful performances. "HUMBLE." is a hard-hitting track that showcases his lyrical prowess.</p>
+                    <audio controls loop>
+                        <source src="music/HUMBLE..mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: 21 Savage - Title: Prove It</p>
-                <audio controls loop>
-                    <source src="music/Prove It.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist7.jpg" alt="21 Savage - Prove It">
+                <div class="beat-card-content">
+                    <h3>21 Savage - Prove It</h3>
+                    <p>21 Savage is an American rapper known for his gritty lyrics and distinctive voice. "Prove It" is a powerful track that explores themes of loyalty and trust.</p>
+                    <audio controls loop>
+                        <source src="music/Prove It.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Future, Metro Boomin - Type Shit</p>
-                <audio controls loop>
-                    <source src="music/Type Shit.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist8.jpg" alt="Future, Metro Boomin - Type Shit">
+                <div class="beat-card-content">
+                    <h3>Future, Metro Boomin - Type Shit</h3>
+                    <p>Future and Metro Boomin are a dynamic duo known for their innovative beats and catchy hooks. "Type Shit" is a high-energy track that showcases their unique style.</p>
+                    <audio controls loop>
+                        <source src="music/Type Shit.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Kendrick Lamar - Title: Money Trees</p>
-                <audio controls loop>
-                    <source src="music/Money Trees.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <p>Artist: Future, Metro Boomin - Title: All to Myself</p>
-                <audio controls loop>
-                    <source src="music/All to Myself.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist9.jpg" alt="Kendrick Lamar - Money Trees">
+                <div class="beat-card-content">
+                    <h3>Kendrick Lamar - Money Trees</h3>
+                    <p>"Money Trees" is a standout track from Kendrick Lamar's critically acclaimed album "good kid, m.A.A.d city." The song explores themes of ambition and the pursuit of success.</p>
+                    <audio controls loop>
+                        <source src="music/Money Trees.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
         </div>
 
-        <div class="music-category">
-            <h2>Pop</h2>
-            <div class="audio-sample">
-                <p>Artist: Taylor Swift - Title: Midnight Rain</p>
-                <audio controls loop>
-                    <source src="music/Midnight Rain.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+        <h2>Pop</h2>
+        <div class="beat-grid">
+            <div class="beat-card">
+                <img src="images/artist11.jpg" alt="Taylor Swift - Midnight Rain">
+                <div class="beat-card-content">
+                    <h3>Taylor Swift - Midnight Rain</h3>
+                    <p>Taylor Swift is an American singer-songwriter known for her narrative songwriting and versatile music style. "Midnight Rain" is a captivating track that explores themes of love and reflection.</p>
+                    <audio controls loop>
+                        <source src="music/Midnight Rain.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Drake - Title: Teenage Fever</p>
-                <audio controls loop>
-                    <source src="music/Teenage Fever.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist12.jpg" alt="Drake - Teenage Fever">
+                <div class="beat-card-content">
+                    <h3>Drake - Teenage Fever</h3>
+                    <p>Drake is a Canadian rapper and singer known for his catchy hooks and introspective lyrics. "Teenage Fever" is a nostalgic track that reflects on past relationships and youthful experiences.</p>
+                    <audio controls loop>
+                        <source src="music/Teenage Fever.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Cup of Joe - Title: Multo</p>
-                <audio controls loop>
-                    <source src="music/Multo.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist13.jpg" alt="Cup of Joe - Multo">
+                <div class="beat-card-content">
+                    <h3>Cup of Joe - Multo</h3>
+                    <p>Cup of Joe is a Filipino band known for their heartfelt lyrics and catchy melodies. "Multo" is a beautiful track that explores themes of love and longing.</p>
+                    <audio controls loop>
+                        <source src="music/Multo.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
-            <div class="audio-sample">
-                <p>Artist: Amiel Sol - Title: Sa Bawat Sandali</p>
-                <audio controls loop>
-                    <source src="music/Sa Bawat Sandali.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
-            </div>
-            <div class="audio-sample">
-                <p>Artist: Billie Eilish - Title: Birds of a Feather</p>
-                <audio controls loop>
-                    <source src="music/Birds of a Feather.mp3" type="audio/mp3">
-                    Your browser does not support the audio element.
-                </audio>
+            <div class="beat-card">
+                <img src="images/artist14.jpg" alt="Amiel Sol - Sa Bawat Sandali">
+                <div class="beat-card-content">
+                    <h3>Amiel Sol - Sa Bawat Sandali</h3>
+                    <p>Amiel Sol is a Filipino singer-songwriter known for his soulful voice and heartfelt lyrics. "Sa Bawat Sandali" is a touching track that explores themes of love and devotion.</p>
+                    <audio controls loop>
+                        <source src="music/Sa Bawat Sandali.mp3" type="audio/mp3">
+                        Your browser does not support the audio element.
+                    </audio>
+                </div>
             </div>
         </div>
 
         <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            <br><br>
             <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
         </div>
     </div>

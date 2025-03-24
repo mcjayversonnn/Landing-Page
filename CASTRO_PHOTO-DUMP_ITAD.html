@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Photo Gallery Dump</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+            background-color: #000f20;
+            color: #EEF4ED;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #0B2545;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar .brand {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-right: 250px;
+        }
+
+        .nav-bar .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: #EEF4ED;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
+
+        .gallery-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 50px;
+            color: #EEF4ED;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 2em;
+            margin: 30px 0 20px;
+            color: #EEF4ED;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .gallery {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            justify-content: center;
+        }
+
+        .gallery-item {
+            position: relative;
+            width: calc(20% - 10px);
+            margin-bottom: 10px;
+            overflow: hidden;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            transition: transform 0.3s;
+        }
+
+        .gallery-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.1);
+        }
+
+        .gallery-item .description {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(0, 0, 0, 0.7);
+            color: #EEF4ED;
+            padding: 10px;
+            text-align: center;
+            opacity: 0;
+            transition: opacity 0.3s;
+        }
+
+        .gallery-item:hover .description {
+            opacity: 1;
+        }
+
+        .gallery-item a {
+            display: block;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .btn {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-bottom: 10px;
+            margin-top: 50px;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+            text-decoration: none;
+        }
+
+        .home-button {
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand">Mc. Jayverson Castro</div>
+        <div class="links">
+            <a href="CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
+            <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
+        </div>
+    </div>
+    <div class="gallery-container">
+        <h1>Photo Gallery Dump</h1>
+        
+        <h2>Me, Myself, and My Camera</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/photo1.jpg" target="display">
+                    <img src="images/photo1.jpg" alt="Photo 1">
+                    <div class="description">Close-up Selfie Last Year Ago</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo2.jpg" target="display">
+                    <img src="images/photo2.jpg" alt="Photo 2">
+                    <div class="description">I took this selfie before going to university</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo3.jpg" target="display">
+                    <img src="images/photo3.jpg" alt="Photo 3">
+                    <div class="description">We were going to Mall of Asia here</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo4.jpg" target="display">
+                    <img src="images/photo4.jpg" alt="Photo 4">
+                    <div class="description">I really liked my sunglasses here, so I took a selfie</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo5.jpg" target="display">
+                    <img src="images/photo5.jpg" alt="Photo 5">
+                    <div class="description">Just found myself attractive while waiting for my next class.</div>
+                </a>
+            </div>
+        </div>
+
+        <h2>Moments with My People</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/photo6.jpg" target="display">
+                    <img src="images/photo6.jpg" alt="Photo 6">
+                    <div class="description">Visiting 'The Lights of Christmas' in Taguig with my cousins</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo7.jpg" target="display">
+                    <img src="images/photo7.jpg" alt="Photo 7">
+                    <div class="description">At Bonifacio Global City with my best friend since high school</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo8.jpg" target="display">
+                    <img src="images/photo8.jpg" alt="Photo 8">
+                    <div class="description">Family is truly love</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo9.jpg" target="display">
+                    <img src="images/photo9.jpg" alt="Photo 9">
+                    <div class="description">At a coffee shop with my high school friends and classmates</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo10.jpg" target="display">
+                    <img src="images/photo10.jpg" alt="Photo 10">
+                    <div class="description">Visiting my grandfather's grave with my family</div>
+                </a>
+            </div>
+        </div>
+
+        <h2>This Outfit Deserves a Moment</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/photo11.jpg" target="display">
+                    <img src="images/photo11.jpg" alt="Photo 11">
+                    <div class="description">This was from 2022, when the pandemic was almost over. I wore a khaki flannel and slacks</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo12.jpg" target="display">
+                    <img src="images/photo12.jpg" alt="Photo 12">
+                    <div class="description">At the National Museum of Natural History, I wore my denim jacket, brown slacks, loafers, and a tote bag.</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo13.jpg" target="display">
+                    <img src="images/photo13.jpg" alt="Photo 13">
+                    <div class="description">Just wanted to show off one of my favorite hoodies in my closet</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo14.jpg" target="display">
+                    <img src="images/photo14.jpg" alt="Photo 14">
+                    <div class="description">I love this place, it's full of aesthetic arts and paintings. Every corner is a masterpiece, and so is my outfit</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo15.jpg" target="display">
+                    <img src="images/photo15.jpg" alt="Photo 15">
+                    <div class="description">At Bonifacio Global City, I wore my favorite sweater</div>
+                </a>
+            </div>
+        </div>
+
+        <h2>Things That Catch My Attention</h2>
+        <div class="gallery">
+            <div class="gallery-item">
+                <a href="images/photo16.jpg" target="display">
+                    <img src="images/photo16.jpg" alt="Photo 16">
+                    <div class="description">The city lights at Luneta Park were absolutely stunning that night</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo17.jpg" target="display">
+                    <img src="images/photo17.jpg" alt="Photo 17">
+                    <div class="description">The cloud-covered Mayon Volcano in Legazpi, Albay, was a beautiful sight</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo18.jpg" target="display">
+                    <img src="images/photo18.jpg" alt="Photo 18">
+                    <div class="description">This museum visit was unexpectedly unique and aesthetically pleasing</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo19.jpg" target="display">
+                    <img src="images/photo19.jpg" alt="Photo 19">
+                    <div class="description">Unwinding at Escalera Cafe in Binangonan, Rizal. I love iced coffee</div>
+                </a>
+            </div>
+            <div class="gallery-item">
+                <a href="images/photo20.jpg" target="display">
+                    <img src="images/photo20.jpg" alt="Photo 20">
+                    <div class="description">This is one of the best sunset photos I've taken, and I love how the light seems to focus directly on me</div>
+                </a>
+            </div>
+        </div>
+
+        <div align="center" class="home-button">
+            <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>  
+    </div>
+</body>
+</html>

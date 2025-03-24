@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<title>BIOGRAPHY</title>
+		<link rel="stylesheet" href="style.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<style>
+			
+		body {
+			color: #EEF4ED;
+			background-color: #000f20;
+			font-family: Tahoma, Geneva, Verdana, sans-serif;
+			text-align: justify;
+			margin: 0;
+			padding: 0;
+		}
+
+		.biography-header {
+			text-align: center;
+            padding: 20px;
+            background-color: #0B2545;
+            color: #EEF4ED;
+            border-bottom: 5px solid #13315C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin: 10px auto;
+            width: 97%;
+            margin-top: 80px;
+		}
+
+		.biography-header h1 {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+		}
+
+		h2 {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+			color: #EEF4ED;
+			background-color: #0B2545;
+			text-align: center;
+			font-size: 30px;
+		}
+
+		.container {
+		display: flex;
+		}
+
+		.content {
+		flex: 1;
+		padding: 50px;
+		}
+
+		.nav-buttons {
+		display: inline-block;
+		background-color: #0B2545;
+		padding: 8px;
+		border-radius: 20px;
+		text-align: center;
+		color: #EEF4ED;
+		font-weight: bold;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+		margin-top: 10px;
+		}
+
+		.nav-buttons:hover {
+		background-color: #007bff;
+		color: #fff;
+		}
+
+		.section-nav {
+		display: flex;
+		justify-content: center;
+		background-color: #0B2545;
+		padding: 15px;
+		border-radius: 10px;
+		margin: 20px auto;
+		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.section-nav ul {
+		list-style-type: none;
+		padding: 0;
+		margin: 0;
+		display: flex;
+		gap: 20px;
+		}
+
+		.section-nav li {
+		display: inline;
+		}
+
+		.section-nav a {
+		text-decoration: none;
+		color: #EEF4ED;
+		font-weight: bold;
+		padding: 10px 20px;
+		border-radius: 5px;
+		transition: background-color 0.3s, color 0.3s;
+		}
+
+		.section-nav a:hover {
+		background-color: #007bff;
+		color: #EEF4ED;
+		}
+
+		.btn {
+		background-color: #0B2545;
+		color: #EEF4ED;
+		padding: 8px;
+		border-radius: 20px;
+		text-align: center;
+		font-weight: bold;
+		text-decoration: none;
+		transition: background-color 0.3s, color 0.3s;
+		margin-bottom: 10px;
+		}
+
+		.btn:hover {
+		background-color: #007bff;
+		color: #EEF4ED;
+		text-decoration: none;
+		}
+
+		p {
+		background-color: #22344b;
+		padding: 15px;
+		border-radius: 20px;
+		margin-bottom: 20px;
+		}
+
+		.gallery {
+		display:flex;
+		justify-content: center;    
+		padding: 25px;
+		border-radius: 10px;
+		margin: 20px auto;
+		width: 50px;
+		}
+
+		.gallery img {
+		display: flex;
+		width: 200px;
+		height: auto;
+		border: 2px ridge #0B2545;
+		border-radius: 10px;
+		margin: 20px;
+		opacity: 0.50;
+		}
+
+		.gallery a {
+		display: contents;
+		}
+
+		img:hover{
+		opacity:1;
+		box-shadow:15px 15px 10px black;
+		}
+
+		.nav-bar {
+			display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #0B2545;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+			left: 0;
+			right: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+		}
+
+		.nav-bar .brand {
+			font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-right: 200px;
+		}
+
+		.nav-bar .links {
+			display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+		}
+
+		.nav-bar a {
+			color: #EEF4ED;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+		}
+
+		.nav-bar a:hover {
+			background-color: #007bff;
+            color: #EEF4ED;
+		}
+
+		.biography-header {
+		margin-top: 80px; 
+		}
+		</style>
+	</head>
+	<body>
+		<div class="nav-bar">
+			<div class="brand">Mc. Jayverson Castro</div>
+			<div class="links">
+				<a href="CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+				<a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+				<a href="CASTRO_SKILLS_ITAD.html">Skills</a>
+				<a href="CASTRO_RESUME_ITAD.html">Resume</a>
+				<a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+				<a href="CASTRO_BEAT_ITAD.html">My Beat</a>
+				<a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
+				<a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+				<a href="CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+				<a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
+			</div>
+		</div>
+		<!--CASTRO, MC. JAYVERSON-->
+		<!--CIP1101-ITAD-->
+		<div class="biography-header">
+			<h1>Bicolano by Birth, IT Student by Choice</h1>
+		</div>
+		<div class="container">
+			<nav class="section-nav">
+				<ul>
+					<li><a href="#childhood">Childhood Years</a></li>
+					<li><a href="#teenage">Teenage Years</a></li>
+					<li><a href="#college">College Years</a></li>
+				</ul>
+			</nav>
+		</div>
+		<div class="content">
+				<h2 id="childhood">My Childhood Stories</h2>
+				<div align="justify">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;I was born on October 31, 2005, sa lugar kung saan naroon ang napaka gandang Mayon Volcano, which is sa Bicol. <sup>1</sup> Bicolano ako, pero sarcastically, hindi ako mahilig sa maanghang na pagkain. <sup>2</sup> Sadyang hindi lang ako nasanay kumain nito dahil na rin hindi ako nag-stay sa Bicol noong bata pa ako. <sup>3</sup> My childhood was a colorful variety of games, stories, and endless curiosity. <sup>4</sup> Mahilig akong maglaro noon ng mga larong pambata tulad ng <em>tumbang preso</em>, <em>patintero</em>, <em>pogs</em>, at <em>turumpo</em>. <sup>5</sup> Those games taught me the value of teamwork, strategy, and having fun with friends habang walang iniisip na kahit anong problema. <sup>6</sup> Hindi lang puro laro, mahilig din ako magbasa at manood ng mga kwentong pambata, lalo na yung mga fairy tales at adventure stories na nagpapalawak ng aking imahinasyon. <sup>7</sup> Naalala ko pa yung karoling tuwing magpapasko, gumagawa ng mga instrumento gamit lang yung tantiyan ng mga softdrinks tapos yung golen na nasa loob ng bote para maingay. <sup>8</sup> That scenario was so memorable, nagtuturuan pa kung sino ang unang mag-a-approach sa bahay-bahay. <sup>9</sup> Yung takot at kaba na baka pagalitan kami ng mga matatanda, Pero kapag may isang naglakas-loob, susunod na rin yung iba, tuloy-tuloy na ang pagkanta. <sup>10</sup> Hindi lang basta-basta yung pag-karoling, may mga kompetensya pa kasi hindi lang kayo yung nangangaroling sa lugar namin. <sup>11</sup> Kailangan talaga mag-effort para mapansin at mabigyan ng barya o kaya naman ay mga candies. <sup>12</sup> Minsan, hindi pa tapos kumanta mag sasabi na agad ng “tawad” kase marami ng dumaang bata at nangaroling sa kanila. <sup>13</sup> Isa sa mga pinakamemorable moments ko noong bata ako ay yung paglalaro ko sa labas kasama ng mga childhood friends ko. <sup>14</sup> Kahit mainit o maulan, basta masaya, laro lang nang laro. <sup>15</sup> Mas gusto ko nga lang minsan kapag umuulan is yung maligo ng ulan then sisigaw ng “Lumakas ka pa”, without me knowing na nakaka perwisyo ako sa ibang tao. <sup>16</sup> Hindi lang traditional games ang hilig ko, nahilig din ako maglaro sa computer shop noon. <sup>17</sup> Doon ko unang na-discover ang mundo ng technology, playing games like <strong>Counter-Strike</strong>, <strong>CrossFire</strong>, <strong>Point Blank</strong>, <strong>League of Legends</strong> and many more. <sup>18</sup> Those hours spent in the computer shop influenced my interest in computers, and little did I know, it would shape my future. <sup>19</sup> Kaya nga ngayon, I’m taking Bachelor of Science in Information Technology, dahil na rin sa hilig ko sa computers noong bata pa ako. <sup>20</sup> These kinds of memories remind me of how simple yet joyful life was when I was still a child. <sup>21</sup>
+					</p>
+					<div class="gallery">
+						<a href="images/childhood1.jpg" target="display"><img src="images/childhood1.jpg" alt="Childhood Years" title="It's Me & My Little Brother"></a>
+						<a href="images/childhood2.jpg" target="display"><img src="images/childhood2.jpg" alt="Childhood Years" title="My Cute Childhood Picture Attending on Birthday Party"></a>
+						<a href="images/childhood3.jpg" target="display"><img src="images/childhood3.jpg" alt="Childhood Years" title="My Cute Childhood Picture"></a>
+						<a href="images/childhood4.jpg" target="display"><img src="images/childhood4.jpg" alt="Childhood Years" title="My Elementary Toga Picture"></a>		
+					</div>
+				</div>
+
+				<div align="center">
+				<div class="nav-buttons">
+					<a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+				</div>
+				</div>
+				<h2 id="teenage">About Teenage Years</h2>
+				<div align="justify">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My teenage years were a time of developing love and relationships, self-discovery, and learning new responsibilities. <sup>1</sup> I remember when I was 13, yun yung ka-una-unahang crush and relationship ko. <sup>2</sup> She was my classmate, and nasa iisang circle of friends lang kami. <sup>3</sup> Nagkagusto siya sa akin noon, and eventually, nag-develop din yung feelings ko for her. <sup>4</sup> It was a mix of excitement and nervousness, yung tipong kinikilig ka kapag nagkikita kayo or nag-uusap. <sup>5</sup> We did the usual things people do in a relationship, like dating and updating each other about our day. <sup>6</sup> Pero syempre, being young and inexperienced, there were also moments of misunderstandings, arguments, tsaka tampuhan. <sup>7</sup> Still, those moments taught me a lot about communication, trust, and how to handle emotions. <sup>8</sup> Nung teenager din ako, nagkaroon na ako ng personal cellphone, which was a big deal for me noon. <sup>9</sup> Natuto ako gumamit ng cellphones, from texting to calling, and even exploring basic apps. <sup>10</sup> Pero kahit may cellphone na ako, hindi nawala sa akin yung paglalaro sa computer shop. <sup>11</sup> Ang ginagawa ko, kapag na-lowbat yung cellphone ko, tsaka ako maglalaro sa computer shop. <sup>12</sup> Doon ko nakikita yung mga kaibigan ko, and we’d spend hours playing games like what I said on my childhood stories. <sup>13</sup> It was a balance between staying connected through my phone and enjoying the thrill of gaming with friends. <sup>14</sup> Those moments were unforgettable. <sup>15</sup> Teenage years were also a time of learning house chores and other essential life skills. <sup>16</sup> Natuto akong maglinis ng bahay, maglaba, mag-saing, at magluto ng simple meals or yung mga priniprito lang like hotdog and eggs. <sup>17</sup> My parents made sure na hindi lang ako focused sa academics since I was high school that time, but also prepared sa tunay na buhay. <sup>18</sup> I remember my mom teaching me how to cook adobo, kase ayun yung pinaka madaling lutuin among other dishes. <sup>19</sup> and my dad naman po is an OFW so we’re making memories through video call. <sup>20</sup> Those lessons were helpful experience to me, since they made me more independent and responsible. <sup>21</sup> At the same time, I was also learning how to manage my time, balancing schoolwork, relationships, and personal hobbies. <sup>22</sup>
+					</p>
+					<div class="gallery">
+						<a href="images/teenage1.jpg" target="display"><img src="images/teenage1.jpg" alt="Teenage Years" title="My Selfie w/ Glasses On"></a>
+						<a href="images/teenage5.jpg" target="display"><img src="images/teenage5.jpg" alt="Teenage Years" title="Favorite Pose (Side View)"></a>
+						<a href="images/teenage3.jpg" target="display"><img src="images/teenage3.jpg" alt="Teenage Years" title="Another Favorite Pose w/ Glasses On"></a>
+						<a href="images/teenage4.jpg" target="display"><img src="images/teenage4.jpg" alt="Teenage Years" title="My Senior High School Toga Picture"></a>
+					</div>
+				</div>
+				<div align="center">
+				<div class="nav-buttons">
+					<a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+				</div>
+				</div>
+				<h2 id="college">Throughout College Experiences</h2>
+				<div align="justify">
+					<p>
+						&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;About where I am now, It’s more serious compared to the past. <sup>1</sup> College defines what we are in the future kumbaga, ito yung stepping stone natin para makarating sa ating finish line. <sup>2</sup> My first year in college wasn’t exactly the happiest, especially during the first day or first week. <sup>3</sup> It felt like I was back to zero again kasi nga mga bagong kaklase yung ma-meet ko. <sup>4</sup> Kailangan ko pang mag-adjust at makipag-socialize para maging komportable sa mga bago mong kasama o magiging kaibigan. <sup>5</sup> I chose the course Bachelor of Science in Information Technology. <sup>6</sup> which as I mentioned in my childhood and teenage years, aligned with my love for computers. <sup>7</sup> Pero sa totoo lang, wala akong masyadong knowledge about programming languages and other software. <sup>8</sup> Kaya naman naging mahirap sa akin yung first year. <sup>9</sup> There were times na parang gusto ko nang mag shift ng course, pero sa tulong ng mga professors at friends, parang mas naging magaan siya. <sup>10</sup> Doon ko na-realize na, “Ah, ganito pala yon. <sup>11</sup> kaya ko naman pala,” and slowly, things started to make sense. <sup>12</sup> By the second year, medyo nakapag-adjust na ako, and tuloy-tuloy na lang yung ginagawa ko. <sup>13</sup> I focused on doing school works, reviewing for quizzes, and preparing for exams. <sup>14</sup> Masasabi ko rin na may knowledge na ako sa mga programming languages tulad ng <strong>Python</strong>, <strong>Java</strong>, <strong>C#</strong>, and yung <strong>MySQL</strong> for databases. <sup>15</sup> I’m a grade-conscious person, so hindi okay sa akin yung pasado lang. <sup>16</sup> Gusto ko lagpas sa passing score. <sup>17</sup> I always try to do my best, kahit na minsan sobrang exhausting na. <sup>18</sup> There were sleepless nights spent coding, debugging, and studying, pero fulfilling naman kapag nakikita mo yung results ng hard work mo. <sup>19</sup> Hindi lang academics yung focus ko, natuto rin akong mag-balance ng time for hobbies and relaxation, like playing online games or watching series kapag may free time. <sup>20</sup> I can say that I’ve grown not just academically, but also personally. <sup>21</sup>
+					</p>
+					<div class="gallery">
+						<a href="images/college2.jpg" target="display"><img src="images/college2.jpg" alt="College Years" title="My Selfie @ LB Room"></a>
+						<a href="images/college3.jpg" target="display"><img src="images/college3.jpg" alt="College Years" title="Selfie @ PODCIT Com Lab w/ Mario Filter"></a>
+						<a href="images/college5.jpg" target="display"><img src="images/college5.jpg" alt="College Years" title="CCSS Week 2024-2025"></a>
+						<a href="images/college1.jpg" target="display"><img src="images/college1.jpg" alt="College Years" title="W/ my College Friends"></a>
+					</div>
+				</div>
+				<div align="center">
+				<div class="nav-buttons">
+					<a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+				</div>
+				<br><br>
+				<a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>

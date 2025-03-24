@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Bucket List</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+            background-color: #000f20;
+            color: #EEF4ED;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #0B2545;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar .brand {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-right: 250px;
+        }
+
+        .nav-bar .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: #EEF4ED;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #EEF4ED;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .bucket-list {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .bucket-item {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .bucket-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .bucket-item i {
+            font-size: 2em;
+            margin-bottom: 10px;
+            color: #FFD700;
+        }
+
+        .bucket-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .bucket-item p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand">Mc. Jayverson Castro</div>
+        <div class="links">
+            <a href="CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
+            <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>My Bucket List</h1>
+        <div class="bucket-list">
+            <div class="bucket-item">
+                <i class="fas fa-plane"></i>
+                <h3>Travel to Japan</h3>
+                <p>Experience the cherry blossoms, visit Mount Fuji, and explore Tokyo's vibrant culture.</p>
+            </div>
+            <div class="bucket-item">
+                <i class="fas fa-graduation-cap"></i>
+                <h3>Earn a Master's Degree</h3>
+                <p>Pursue higher education in Information Technology to deepen my knowledge and skills.</p>
+            </div>
+            <div class="bucket-item">
+                <i class="fas fa-camera"></i>
+                <h3>Start a Photography Blog</h3>
+                <p>Share my passion for capturing moments and landscapes through a professional blog.</p>
+            </div>
+            <div class="bucket-item">
+                <i class="fas fa-code"></i>
+                <h3>Build a Tech Startup</h3>
+                <p>Launch a company focused on innovative software solutions for businesses.</p>
+            </div>
+            <div class="bucket-item">
+                <i class="fas fa-hiking"></i>
+                <h3>Climb a Mountain</h3>
+                <p>Challenge myself physically and mentally by hiking a major mountain.</p>
+            </div>
+            <div class="bucket-item">
+                <i class="fas fa-book"></i>
+                <h3>Write a Book</h3>
+                <p>Document my journey and share insights on personal growth and technology.</p>
+            </div>
+        </div>
+        <div align="center">
+            <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+</body>
+</html>

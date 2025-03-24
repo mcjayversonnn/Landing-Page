@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dream Places</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <style>
+        body {
+            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
+            background-color: #000f20;
+            color: #EEF4ED;
+            margin: 0;
+            padding: 0;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #0B2545;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar .brand {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-right: 250px;
+        }
+
+        .nav-bar .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: #EEF4ED;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 20px;
+            margin-top: 80px;
+        }
+
+        h1 {
+            font-size: 3em;
+            margin-bottom: 30px;
+            color: #EEF4ED;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-weight: bold;
+            text-align: center;
+        }
+
+        .dream-places {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        .place-item {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 20px;
+            border-radius: 10px;
+            width: calc(33.333% - 20px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .place-item:hover {
+            transform: scale(1.05);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        }
+
+        .place-item img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 10px;
+            margin-bottom: 10px;
+        }
+
+        .place-item h3 {
+            font-size: 1.5em;
+            margin-bottom: 10px;
+        }
+
+        .place-item p {
+            font-size: 1em;
+            line-height: 1.6;
+        }
+
+        .btn {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 30px;
+            display: inline-block;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand">Mc. Jayverson Castro</div>
+        <div class="links">
+            <a href="CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
+            <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
+        </div>
+    </div>
+    <div class="container">
+        <h1>Dream Places</h1>
+        <div class="dream-places">
+            <div class="place-item">
+                <img src="images/japan.jpg" alt="Japan">
+                <h3>Japan</h3>
+                <p>Explore the culture, cherry blossoms, and technology hubs of Japan.</p>
+            </div>
+            <div class="place-item">
+                <img src="images/korea.jpg" alt="South Korea">
+                <h3>South Korea</h3>
+                <p>Experience the vibrant K-pop culture and historical landmarks.</p>
+            </div>
+            <div class="place-item">
+                <img src="images/switzerland.jpg" alt="Switzerland">
+                <h3>Switzerland</h3>
+                <p>Admire the breathtaking Alps and serene lakes of Switzerland.</p>
+            </div>
+            <div class="place-item">
+                <img src="images/maldives.jpg" alt="Maldives">
+                <h3>Maldives</h3>
+                <p>Relax on the pristine beaches and enjoy the crystal-clear waters.</p>
+            </div>
+            <div class="place-item">
+                <img src="images/newyork.jpg" alt="New York">
+                <h3>New York</h3>
+                <p>Visit the iconic landmarks and experience the bustling city life.</p>
+            </div>
+            <div class="place-item">
+                <img src="images/paris.jpg" alt="Paris">
+                <h3>Paris</h3>
+                <p>Discover the romance of Paris and marvel at the Eiffel Tower.</p>
+            </div>
+        </div>
+        <div align="center">
+            <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+</body>
+</html>

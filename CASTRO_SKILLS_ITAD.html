@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>SKILLS</title>
+    <link rel="stylesheet" href="skills.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        body {
+            color: #EEF4ED;
+            background-color: #000f20;
+            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            text-align: justify;
+        }
+
+        .skills-header {
+            text-align: center;
+            padding: 20px;
+            background-color: #0B2545;
+            color: #EEF4ED;
+            border-bottom: 5px solid #13315C;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 80px;
+        }
+
+        .skills-header h1 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            margin: 0;
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+        }
+
+        h2 {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            color: #EEF4ED;
+            background-color: #0B2545;
+            text-align: center;
+            font-size: 30px;
+        }
+
+        .container {
+            display: flex;
+        }
+
+        .content {
+            flex: 1;
+            padding: 50px;
+        }
+
+        .nav-buttons {
+            display: inline-block;
+            background-color: #0B2545;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            color: #EEF4ED;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-top: 10px;
+        }
+
+        .nav-buttons:hover {
+            background-color: #007bff;
+            color: #fff;
+        }
+
+        .section-nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0B2545;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .section-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 20px;
+        }
+
+        .section-nav li {
+            display: inline;
+        }
+
+        .section-nav a {
+            text-decoration: none;
+            color: #EEF4ED;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .section-nav a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
+
+        .btn {
+            background-color: #0B2545;
+            color: #EEF4ED;
+            padding: 8px;
+            border-radius: 20px;
+            text-align: center;
+            font-weight: bold;
+            text-decoration: none;
+            transition: background-color 0.3s, color 0.3s;
+            margin-bottom: 10px;
+        }
+
+        .btn:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+            text-decoration: none;
+        }
+
+        p {
+            background-color: #22344b;
+            padding: 15px;
+            border-radius: 20px;
+            margin-bottom: 20px;
+        }
+
+        .gallery {
+            display: flex;
+            justify-content: center;
+            padding: 25px;
+            border-radius: 10px;
+            margin: 20px auto;
+            width: 50px;
+        }
+
+        .gallery img {
+            display: flex;
+            width: 200px;
+            height: auto;
+            border: 2px ridge #0B2545;
+            border-radius: 10px;
+            margin: 20px;
+            opacity: 0.50;
+        }
+
+        .gallery a {
+            display: contents;
+        }
+
+        img:hover {
+            opacity: 1;
+            box-shadow: 15px 15px 10px black;
+        }
+
+        .nav-bar {
+            display: flex;
+            justify-content: flex-start;
+            align-items: center;
+            background-color: #0B2545;
+            padding: 10px 20px;
+            position: fixed;
+            top: 0;
+			left: 0;
+			right: 0;
+            width: 100%;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .nav-bar .brand {
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            font-size: 1.5em;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-right: 200px;
+        }
+
+        .nav-bar .links {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .nav-bar a {
+            color: #EEF4ED;
+            text-decoration: none;
+            font-weight: bold;
+            padding: 10px 10px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .nav-bar a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
+    </style>
+</head>
+<body>
+    <div class="nav-bar">
+        <div class="brand">Mc. Jayverson Castro</div>
+        <div class="links">
+            <a href="CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
+            <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
+        </div>
+    </div>
+    <div class="skills-header">
+        <h1>My Multiplayer Life: Balancing Skills, Hobbies, and Interest</h1>
+    </div>
+    <div class="container">
+        <nav class="section-nav">
+            <ul>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#hobbies">Hobbies</a></li>
+                <li><a href="#interest">Interest</a></li>
+            </ul>
+        </nav>
+    </div>
+    <div class="content">
+        <h2 id="skills">Skills</h2>
+        <div align="justify">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;One of my skills na I'm confident is yung <strong>adaptability</strong> ko. <sup>1</sup> Madali akong maka-adapt sa mga bagay-bagay na nangyayari sa aking paligid, lalo na kapag nasubukan ko na ito before. <sup>2</sup> Madali ko siyang natututunan at naa-adapt, lalo na kung hindi siya gano'n kahirap para sa akin. <sup>3</sup> For example nalang is noong nag-shift kami ng online classes dahil sa pandemic, <em>hindi ako masyadong nahirapan mag-adjust</em> kasi sanay na ako gumamit ng mga apps and devices. <sup>4</sup> I quickly learned how to use online platforms like Google Meet and Google Classroom, and I even helped some of my classmates na nahihirapan mag-adapt. <sup>5</sup> This adaptability also helped me when I started college. <sup>6</sup> Nung una, medyo overwhelming yung new environment, new people, and new routines, pero ayun nga tulad ng sabi ko madali ako maka-adapt sa mga bagay-bagay kaya nakapag-adjust ako agad. <sup>7</sup> I learned how to communicate and mag build ng memories with those new faces. <sup>8</sup> I also learned to manage my time effectively since kailangan na kailangan ito sa college journey ko. <sup>9</sup> Another skill na meron ako ay yung <strong>communication</strong> ko between those people na comfortable ako, like my circle of friends and my girlfriend. <sup>10</sup> Kaya ko nasabing isa ito sa mga skills ko dahil napaka-natural nito para sa akin, especially kapag kasama ko sila. <sup>11</sup> I make sure to adjust my communication style depending on the situation. <sup>12</sup> Like kapag may problema yung isa sa amin, I switch to a more serious tone para mas maging comforting yung approach ko. <sup>13</sup> I listen carefully, give advice sometimes when needed, and make sure na they feel supported. <sup>14</sup> Pero kapag nagkukulitan lang kami, mas relaxed and comfortable yung usapan kaya nandoon yung mga jokes and laugh. <sup>15</sup> Yung tipong sumasakit na yung tiyan namin kakatawa, pero tuloy pa rin ang bardagulan. <sup>16</sup> <strong>Time Management</strong> din yung masasabi kong isa sa mga skills or strengths ko. <sup>17</sup> Being a college student na may maraming responsibilities, natuto akong mag-prioritize ng tasks at mag-set ng schedule kada may school works na gagawin para hindi ma-overwhelm. <sup>18</sup> like I always make sure na may oras ako para sa academics and hobbies. <sup>19</sup> I don't usually use apps or tools just to keep track of deadlines since yung Canvas na yung gumagawa no'n para sa 'kin. <sup>20</sup> I break down big tasks into smaller tulad nalang ng mga kaya ko namang gawin sa cellphone so hindi na 'ko gumagamit ng laptop or pc. <sup>21</sup> It is manageable steps for me para hindi ako masyadong ma-stress. <sup>22</sup> This skill has been especially helpful during busy weeks, like kapag may exams, quizzes and school works at the same time. <sup>23</sup> Dahil sa effective time management ko, I'm able to balance my responsibilities and still have time for myself. <sup>24</sup>
+            </p>
+            <div class="gallery">
+                <a href="images/adaptability.jpg" target="display"><img src="images/adaptability.jpg" alt="Skills" title="Adaptability Icon"></a>
+                <a href="images/communication.jpg" target="display"><img src="images/communication.jpg" alt="Skills" title="Communication Icon"></a>
+                <a href="images/time management.jpg" target="display"><img src="images/time management.jpg" alt="Skills" title="Time Management Icon"></a>
+            </div>
+        </div>
+        <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+        </div>
+        <h2 id="hobbies">Hobbies</h2>
+        <div align="justify">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Since I was a kid, I've always been <strong>addicted to play online games</strong>. <sup>1</sup> To the point na ilang oras ang nagugugol ko rito sa paglalaro lang, especially noong wala pa masyadong responsibilities. <sup>2</sup> Dahil ito ang naging libangan ko simula pagkabata, it became a huge part of my life. <sup>3</sup> Like what I've said on my Biography, Games like <strong>Counter-Strike, Cross Fire, Valorant, League of Legends, and Mobile Legends</strong> were my favorites. <sup>4</sup> This games taught me how to be a Team Player and also Trash Talker. <sup>5</sup> kidding aside, I also enjoy playing offline games like <strong>GTA V and NBA 2K</strong>, since meron kaming PS4 sa aming bahay. <sup>6</sup> It helps me to be calm or I should say na it's my savior kapag yung wifi is hindi okay or nawawala yung connection. <sup>7</sup> Over the years, may ilan na ring nadagdag sa aking hobbies, tulad ng panonood ng mga <strong>Movies</strong> and <strong>K-dramas</strong>. <sup>8</sup> I love how movies and dramas tell stories, nakaka-relate ako sa mga characters, and sometimes, they even inspire me to be better. <sup>9</sup> Especially to those leading man sa isang romantic dramas. <sup>10</sup> Another hobby I've developed is playing <strong>Basketball</strong>. <sup>11</sup> I started playing it more seriously nung high school, kasama yung mga high school classmates ko. <sup>12</sup> I find it really fun and fulfilling. <sup>13</sup> Basketball is not just a physical activity for me, It's also a way to bond with friends since bibihira ng makapag kita dahil busy sa mga kanya-kanyang responsibilites.<sup>14</sup> Kapag may free time, I play basketball sa court malapit sa bahay or simply walking distance lang. <sup>15</sup> Speaking of basketball, I also love watching NBA games. <sup>16</sup> One of my favorite player on that league is Stephen Curry from Golden State Warriors (GSW). <sup>17</sup> I also enjoy practicing coding, which is both a hobby and a skill I'm developing for my future career. <sup>18</sup> It's challenging, pero kailangan siyang matutunan since isa siya sa way para maging successful sa future. <sup>19</sup> I usually practice coding during my free time, and I can say na I'm slowly getting better at it. <sup>20</sup>
+            </p>
+            <div class="gallery">
+                <a href="images/mobile legends.jpg" target="display"><img src="images/mobile legends.jpg" alt="Hobbies" title="Playing Mobile Legends @ Tournament"></a>
+                <a href="images/valorant.jpg" target="display"><img src="images/valorant.jpg" alt="Hobbies" title="Playing Valorant @ Home"></a>
+                <a href="images/gta5.jpg" target="display"><img src="images/gta5.jpg" alt="Hobbies" title="Grand Theft Auto 5 Icon"></a>
+                <a href="images/nba2k.jpg" target="display"><img src="images/nba2k.jpg" alt="Hobbies" title="NBA 2K Icon"></a>
+                <a href="images/netflix.jpg" target="display"><img src="images/netflix.jpg" alt="Hobbies" title="Watching My Fav Series (Alice in Borderland)"></a>
+            </div>
+        </div>
+        <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+        </div>
+        <h2 id="interest">Interest</h2>
+        <div align="justify">
+            <p>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;My interest is more on participating in major tournaments in Mobile Legends. <sup>1</sup> I've been playing this game for years, and joining tournaments gives me a sense of achievement. <sup>2</sup> It's not just about winning, It's also about the experience of playing in serious game. <sup>3</sup> Even though I also participated in some tournaments, I always want na mag participate pa kase na-eenjoy ko mag laro sa ganitong event. <sup>4</sup> I also have interest in <strong>traveling</strong>. <sup>5</sup> Gusto kong makapunta sa iba't ibang lugar tulad ng <em>La Union, Baguio, Palawan</em> and other beautiful places in the <em>Philippines</em>. <sup>6</sup> May ibang magagandang lugar sa Pilipinas lalo na yung mga makikita mo sa mga movies or palabas. <sup>7</sup> I want to experience their <em>culture, food, and history</em>. <sup>8</sup> Aside from traveling around the Philippines, one of my dreams is to travel outside like <em>Japan</em>. <sup>9</sup> Imagine makita mo yung mga creator ng anime na pinapanood mo, I want that feeling. <sup>10</sup> Gusto ko rin makapunta sa <em>Korea</em> just to learn their language. <sup>11</sup> I'm someone who's always eager to learn new things, especially mga knowledge na hindi ko pa alam or areas na feeling ko kulang ako. <sup>12</sup> I'm currently exploring other programming languages like <strong>HTML, CSS, and Javascript</strong>. <sup>13</sup> It is necesarry since it aligns to my subject or course ko sa college and para mas mapalawak yung skills ko sa tech. <sup>14</sup> It helps me stay ahead and prepared for future challenges. <sup>15</sup> I also want <strong>Community Services</strong>, especially noong NSTP ko noong 1st year. <sup>16</sup> I love seeing the smile of those people. <sup>17</sup> Dito na papasok yung interest ko sa Photography. <sup>18</sup> I love taking pictures of random things for my memories. <sup>19</sup> I love <em>capturing sunsets and sunrise</em>. <sup>20</sup> I'm still learning the technical side of photography, like adjusting the camera settings and learning the <em>rule of thirds</em>. <sup>21</sup> rule of thirds helping me when I'm capturing my outfits. <sup>22</sup>
+            </p>
+            <div class="gallery">
+                <a href="images/tournament.jpg" target="display"><img src="images/tournament.jpg" alt="Interest" title="Inter Brgy ML Tournament Champion"></a>
+                <a href="images/teenage2.jpg" target="display"><img src="images/teenage2.jpg" alt="Interest" title="Visiting Albay Mayon Volcano"></a>
+                <a href="images/html.jpg" target="display"><img src="images/html.jpg" alt="Interest" title="HTML Icon"></a>
+                <a href="images/css.jpg" target="display"><img src="images/css.jpg" alt="Interest" title="CSS Icon"></a>
+                <a href="images/js.jpg" target="display"><img src="images/js.jpg" alt="Interest" title="JavaScript Icon"></a>
+                <a href="images/community services.jpg" target="display"><img src="images/community services.jpg" alt="Interest" title="Community Services @ Loyola (near U-BELT)"></a>
+            </div>
+        </div>
+        <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            <br><br>
+            <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>
+    </div>
+</body>
+</html>

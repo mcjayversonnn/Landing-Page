@@ -23,6 +23,7 @@
             top: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -57,12 +58,13 @@
         .gallery-container {
             max-width: 1400px;
             margin: 0 auto;
-            padding: 100px 20px 50px;
+            padding: 20px;
         }
 
         h1 {
             font-size: 4em;
-            margin-bottom: 100px;
+            margin-top: 100px;
+            margin-bottom: 50px;
             color: #EEF4ED;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
@@ -91,8 +93,9 @@
         }
 
         .gallery-item img {
+            display: block; 
             width: 100%;
-            height: 100%;
+            height: 400px;
             object-fit: cover;
             transition: transform 0.3s;
             border-radius: 10px;
@@ -152,6 +155,47 @@
         .home-button {
             margin-top: 40px;
         }
+
+        .nav-buttons {
+            margin-top: 50px;
+        }
+
+        .section-nav {
+            display: flex;
+            justify-content: center;
+            background-color: #0B2545;
+            padding: 15px 30px;
+            border-radius: 20px;
+            margin: 20px auto;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            width: fit-content;
+        }
+
+        .section-nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            gap: 50px;
+        }
+
+        .section-nav li {
+            display: inline;
+        }
+
+        .section-nav a {
+            text-decoration: none;
+            color: #EEF4ED;
+            font-weight: bold;
+            padding: 10px 20px;
+            border-radius: 5px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        .section-nav a:hover {
+            background-color: #007bff;
+            color: #EEF4ED;
+        }
     </style>
 </head>
 <body>
@@ -172,8 +216,15 @@
     </div>
     <div class="gallery-container">
         <h1>Photo Gallery Dump</h1>
-        
-        <h2>Me, Myself, and My Camera</h2>
+        <nav class="section-nav">
+            <ul>
+                <li><a href="#self">Selfie</a></li>
+                <li><a href="#people">Family & Friends</a></li>
+                <li><a href="#outfit">Outfits</a></li>
+                <li><a href="#attention">Random Things</a></li>
+            </ul>
+        </nav>
+        <h2 id="self">Me, Myself, and My Camera</h2>
         <div class="gallery">
             <div class="gallery-item">
                 <a href="images/photo1.jpg" target="display">
@@ -207,7 +258,13 @@
             </div>
         </div>
 
-        <h2>Moments with My People</h2>
+        <div align="center">
+        <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+        </div>
+        </div>
+
+        <h2 id="people">Moments with My People</h2>
         <div class="gallery">
             <div class="gallery-item">
                 <a href="images/photo6.jpg" target="display">
@@ -241,7 +298,13 @@
             </div>
         </div>
 
-        <h2>This Outfit Deserves a Moment</h2>
+        <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            </div>
+
+        <h2 id="outfit">This Outfit Deserves a Moment</h2>
         <div class="gallery">
             <div class="gallery-item">
                 <a href="images/photo11.jpg" target="display">
@@ -275,7 +338,13 @@
             </div>
         </div>
 
-        <h2>Things That Catch My Attention</h2>
+        <div align="center">
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            </div>
+            </div>
+
+        <h2 id="attention">Things That Catch My Attention</h2>
         <div class="gallery">
             <div class="gallery-item">
                 <a href="images/photo16.jpg" target="display">
@@ -310,6 +379,8 @@
         </div>
 
         <div align="center" class="home-button">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+            <br><br>
             <a href="https://mcjayversonnn.github.io/CASTRO_LANDING_PAGES_ITAD/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
         </div>  
     </div>

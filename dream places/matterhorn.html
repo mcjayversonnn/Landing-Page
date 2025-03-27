@@ -2,151 +2,131 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Matterhorn - Dream Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matterhorn, Switzerland - Dream Places</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <style>
-       body {
-            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
-            background-color: #000f20;
-            color: #EEF4ED;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-bar {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: #0B2545;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .nav-bar .brand {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #EEF4ED;
-            margin-right: 250px;
-        }
-
-        .nav-bar .links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .nav-bar a {
-            color: #EEF4ED;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .nav-bar a:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            margin-top: 80px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #EEF4ED;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 40px;
-        }
-
-        .content-section {
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .content-section p {
-            background-color: #22344b;
-		    padding: 15px;
-		    border-radius: 20px;
-		    margin-bottom: 20px;
-        }
-
-        .content-section img {
-            display: block;
-            margin: 20px auto;
-            max-width: 55%;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn {
-            background-color: #0B2545;
-            color: #EEF4ED;
-            padding: 12px 20px;
-            border-radius: 25px;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-            display: inline-block;
-            margin: 20px auto;
-        }
-
-        .btn:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-    </style>
+    <link rel="stylesheet" href="dream_places.css">
 </head>
 <body>
     <div class="nav-bar">
         <div class="brand">Mc. Jayverson Castro</div>
         <div class="links">
             <a href="../CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="../CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="../CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="../CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="../CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="../CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="../CASTRO_FILM_ITAD.html">My Kind of Film</a>
             <a href="../CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="../CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="../CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
     <div class="container">
-        <h1>Matterhorn, Switzerland</h1>
-        <div class="content-section">
-            <img src="../images/matterhorn.jpg" alt="Matterhorn">
-            <h2>Why This Place is Special to Me</h2>
-            <p>
-                The Matterhorn is a majestic peak that symbolizes the beauty of the Swiss Alps. Its iconic shape and serene surroundings make it a dream destination for me. I long to experience its breathtaking views and peaceful atmosphere.
-            </p>
-        </div>
-        <div class="content-section">
-            <h2>How to Get There</h2>
-            <p>
-                The Matterhorn is located near Zermatt, Switzerland. You can take a train to Zermatt, which is a car-free village. From there, cable cars and hiking trails provide access to the mountain.
-            </p>
-        </div>
-        <div class="content-section">
-            <h2>Other Places to Visit in the Area</h2>
-            <p>
-                While visiting the Matterhorn, explore the charming village of Zermatt, the Gornergrat Railway, and the Glacier Paradise. These spots offer stunning views and unforgettable experiences in the Swiss Alps.
-            </p>
-        </div>
-        <div align="center">
-            <a href="../CASTRO_DREAM-PLACES_ITAD.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Dream Places</a>
+        <div class="detail-container">
+            <div class="detail-header">
+                <h1>Matterhorn, Switzerland</h1>
+            </div>
+            
+            <div class="hero-section">
+                <a href="../images/matterhorn.jpg" target="display"><img src="../images/matterhorn.jpg" alt="Matterhorn, Switzerland" class="detail-image"></a>
+                <div class="image-overlay">
+                    <p class="image-caption">The Matterhorn's almost perfectly symmetrical pyramid shape makes it one of the world's most recognizable mountains.</p>
+                </div>
+            </div>
+            
+            <div class="content-wrapper">
+                <div class="main-content">
+                    <div class="detail-section">
+                        <h3>The Iconic Alpine Peak</h3>
+                        <p>
+                            The Matterhorn, standing at 4,478 meters (14,692 feet), is one of the world's most recognizable mountains.
+                            Its distinctive pyramid shape creates a natural wonder that has captivated travelers, photographers, and
+                            mountaineers for generations. Located on the border between Switzerland and Italy, it has become an iconic
+                            symbol of the Swiss Alps and Switzerland itself.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Why this place is special to me?</h3>
+                        <p>
+                            The Matterhorn has captivated my imagination ever since I first saw its distinctive pyramid shape on a chocolate wrapper as a child. There's something almost mythical about its perfect triangular silhouette that makes it seem like a mountain from a fairy tale rather than a real place. While other mountains might be taller or more challenging to climb, the Matterhorn's iconic shape has made it the mountain that represents all mountains in my mind.
+                        </p>
+                        <p>
+                            I'm particularly drawn to the way the Matterhorn changes throughout the day as light conditions shift. This reminds me that even the most seemingly permanent things can appear completely different depending on our perspective and the light in which we view them. I dream of watching a sunrise or sunset with the Matterhorn in view, seeing it transform from a dark silhouette to a golden pyramid and back again.
+                        </p>
+                        <p>
+                            The cultural significance of the Matterhorn also speaks to me—how it has become not just a mountain but a symbol of adventure, perseverance, and natural beauty that transcends borders. Though it sits between Switzerland and Italy, it belongs to the world's imagination. I want to experience the feeling of being in its presence, that mixture of humility and awe that comes from standing before something so magnificent and enduring.
+                        </p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>How to Get There?</h3>
+                        <p>
+                            <strong>Getting to Zermatt:</strong> The Matterhorn is best accessed from the car-free village of Zermatt, Switzerland. Here's how to reach Zermatt:
+                        </p>
+                        <ul>
+                            <li><strong>By Train:</strong> The most common and scenic approach is by train. Take the Swiss Federal Railways (SBB) to Visp, then transfer to the Matterhorn Gotthard Bahn which takes you directly to Zermatt. This narrow-gauge railway journey is breathtaking in itself.</li>
+                            <li><strong>By Car:</strong> If traveling by car, you'll need to leave your vehicle in Täsch (the nearest town with parking) and take a shuttle train to Zermatt, as it's a car-free village.</li>
+                            <li><strong>By Air:</strong> The closest international airports are in Geneva (about 3-4 hours by train) and Zurich (about 3.5-4.5 hours by train). There's also a smaller airport in Sion that's closer but has limited flights.</li>
+                        </ul>
+                        <p>
+                            <strong>From Zermatt to the Matterhorn:</strong> Once in Zermatt, there are several ways to get closer views of the Matterhorn:
+                        </p>
+                        <ul>
+                            <li><strong>Gornergrat Railway:</strong> A cogwheel railway that climbs to 3,089 meters offering spectacular views of the Matterhorn and 29 other 4,000m+ peaks.</li>
+                            <li><strong>Matterhorn Glacier Paradise:</strong> A cable car system that takes you to the highest cable car station in Europe at 3,883 meters with panoramic views of the Matterhorn.</li>
+                            <li><strong>Schwarzsee Paradise:</strong> Another cable car that brings you to a beautiful alpine lake with incredible Matterhorn views.</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Other Places to Visit in Switzerland</h3>
+                        <p>
+                            While visiting the Matterhorn, consider exploring these other beautiful destinations in Switzerland:
+                        </p>
+                        <ul>
+                            <li><strong>Lucerne:</strong> A picturesque city with a stunning lake, covered wooden bridges, and views of Mount Pilatus and Rigi. The nearby mountains can be reached by some of the world's steepest cogwheel railways and scenic cable cars.</li>
+                            <li><strong>Interlaken and the Jungfrau Region:</strong> Located between two beautiful lakes, this area offers access to the "Top of Europe" (Jungfraujoch) and spectacular views of Eiger, Mönch, and Jungfrau mountains.</li>
+                            <li><strong>Bern:</strong> Switzerland's capital is a UNESCO World Heritage site with a beautifully preserved medieval old town, complete with arcaded walkways, historic clock towers, and the stunning Aare River.</li>
+                            <li><strong>Lauterbrunnen Valley:</strong> An incredibly scenic valley with 72 waterfalls, including the famous Staubbach Falls. It reportedly inspired Tolkien's Rivendell in "The Lord of the Rings."</li>
+                            <li><strong>Geneva:</strong> Home to the United Nations European headquarters and the Red Cross Museum, with beautiful Lake Geneva offering activities like boat cruises and water sports.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="sidebar">
+                    <div class="detail-section">
+                        <h3>Dream Activities</h3>
+                        <ul>
+                            <li>Admire the mountain's reflection in Riffelsee Lake</li>
+                            <li>Take the Gornergrat railway for panoramic views</li>
+                            <li>Visit the Matterhorn Museum in Zermatt</li>
+                            <li>Enjoy hiking on trails around the mountain's base</li>
+                            <li>Experience winter sports in the shadow of this magnificent peak</li>
+                            <li>Photograph the Matterhorn at sunrise or sunset</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Best Time to Visit</h3>
+                        <p>
+                            The Matterhorn can be appreciated year-round, with each season offering different experiences.
+                            Summer (June-September) provides the best hiking weather and clearest skies. Winter (December-March)
+                            transforms the area into a winter wonderland perfect for skiing and snowboarding. For photographers,
+                            the "shoulder seasons" of spring and fall often offer the most dramatic lighting conditions.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            
+            <div align="center">
+                <div class="nav-buttons">
+                    <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+                    <a href="../CASTRO_DREAM-PLACES_ITAD.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Dream Places</a>
+                </div>
+            </div>
         </div>
     </div>
 </body>

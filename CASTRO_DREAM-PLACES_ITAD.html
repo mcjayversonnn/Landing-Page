@@ -6,7 +6,7 @@
     <title>Dream Places</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
-        body {
+       body {
             font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
             background-color: #000f20;
             color: #EEF4ED;
@@ -78,50 +78,69 @@
             font-family: Georgia, 'Times New Roman', Times, serif;
             text-align: left;
         }
-
-        .dream-places {
-            display: grid;
-            grid-template-columns: repeat(3, 1fr);
-            gap: 20px;
-            margin-bottom: 40px;
+        
+        .collage-container {
+            background-color: #22344b;
+            background-size: cover;
+            background-position: center;
+            border-radius: 15px;
+            padding: 40px;
+            margin-bottom: 50px;
+            position: relative;
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.5);
         }
 
-        .place-item {
-            background-color: #0B2545;
-            color: #EEF4ED;
-            padding: 20px;
-            border-radius: 10px;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
+        .collage {
             display: flex;
-            flex-direction: column;
-            height: 450px;
+            flex-wrap: wrap;
+            justify-content: center;
+            perspective: 1000px;
+            position: relative;
         }
 
-        .place-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+        .polaroid {
+            background-color: white;
+            padding: 15px 15px 45px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            width: 280px;
+            margin: 15px;
+            transition: all 0.3s ease;
+            position: relative;
+            transform: rotate(var(--rotation));
+            transform-origin: center;
+            z-index: var(--z-index);
+            text-decoration: none;
+            display: block;
         }
 
-        .place-item img {
-            width: 350px;
+        .polaroid:hover {
+            transform: rotate(var(--rotation)) scale(1.05);
+            z-index: 10;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+        }
+
+        .polaroid img {
+            width: 100%;
             height: 200px;
             object-fit: cover;
-            border-radius: 10px;
-            margin-bottom: 10px;
+            margin-bottom: 15px;
+            display: block;
         }
 
-        .place-item h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
-            color: #A4F0F9;
+        .polaroid-title {
+            text-align: center;
+            font-weight: bold;
+            font-size: 20px;
+            margin-bottom: 5px;
+            color: #0B2545;
         }
 
-        .place-item p {
-            font-size: 1em;
-            line-height: 1.6;
-            flex-grow: 1;
+        .polaroid-desc {
+            text-align: center;
+            font-size: 14px;
+            color: #333;
+            overflow: hidden;
+            display: -webkit-box;
         }
 
         .btn {
@@ -133,6 +152,8 @@
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s, color 0.3s;
+            display: inline-block;
+            margin: 5px;
         }
 
         .btn:hover {
@@ -163,69 +184,74 @@
             <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
+
     <div class="container">
-        <h1>Where I Long to Be</h1> 
+        <h1>Where I Long to Be</h1>
 
         <h2>International</h2>
-        <div class="dream-places">
-            <div class="place-item">
-                <img src="images/mount-fuji.jpg" usemap="#mountFuji">
-                <map name="mountFuji">
-                    <area shape="rect" coords="2,2,348,197" href="dream places/mount-fuji.html" target="newSpace" alt="Mount Fuji, Japan">
-                <h3>Mount Fuji, Japan</h3>
-                <p>Mount Fuji, Japan's iconic mountain. I've always wanted to visit Mount Fuji for its iconic, almost surreal beauty. For me, there's something so peaceful yet powerful about seeing it up close.</p>
-            </div>
-            <div class="place-item">
-                <img src="images/seoul.jpg" usemap="#seoul">
-                <map name="seoul">
-                    <area shape="circle" coords="176,100,97" href="dream places/seoul.html" target="newSpace" alt="Seoul, South Korea">
-                <h3>Seoul, South Korea</h3>
-                <p>Seoul is a dream mix of buzzing city life and pockets of tradition. I'd go for their food (Street-market tteokbokki and Endless BBQ). I also want to visit historical landmarks like Gyeongbokgung Palace.</p>
-            </div>
-            <div class="place-item">
-                <img src="images/matterhorn.jpg" usemap="#matterhorn">
-                <map name="matterhorn">
-                    <area shape="polygon" coords="341,180,315,195,288,183,256,192,224,181,204,190,161,176,135,191,89,171,60,194,22,165,7,119,40,92,21,58,43,44,25,13,69,7,105,20,138,7,160,25,188,9,217,29,245,11,279,34,303,12,337,34,323,68,338,87,319,114,337,132,320,157,342,177" href="dream places/matterhorn.html" target="newSpace" alt="Matterhorn, Switzerland">
-                </map>
-                <h3>Matterhorn, Switzerland</h3>
-                <p>The Matterhorn looks just like a mountain from a postcard tall, pointy, and unbelievably beautiful. I want to admire the stunning Matterhorn peak and enjoy the serene beauty of the Swiss Alps.</p>
+        <div class="collage-container">
+            <div class="collage">
+                <div class="polaroid" style="--rotation: -5deg; --z-index: 3;">
+                    <img src="images/mount-fuji.jpg" usemap="#mountFuji" alt="Mount Fuji, Japan">
+                    <map name="mountFuji">
+                        <area shape="rect" coords="0,0,280,200" href="dream places/mount-fuji.html" alt="Mount Fuji, Japan">
+                    </map>
+                    <div class="polaroid-title">Mount Fuji, Japan</div>
+                </div>
+                
+                <div class="polaroid" style="--rotation: 3deg; --z-index: 2;">
+                    <img src="images/seoul.jpg" usemap="#seoul" alt="Seoul, South Korea">
+                    <map name="seoul">
+                        <area shape="circle" coords="140,100,100" href="dream places/seoul.html" alt="Seoul, South Korea">
+                    </map>
+                    <div class="polaroid-title">Seoul, South Korea</div>
+                </div>
+                
+                <div class="polaroid" style="--rotation: -2deg; --z-index: 1;">
+                    <img src="images/matterhorn.jpg" usemap="#matterhorn" alt="Matterhorn, Switzerland">
+                    <map name="matterhorn">
+                        <area shape="poly" coords="140,20,220,60,260,140,140,180,60,140,20,60" href="dream places/matterhorn.html" alt="Matterhorn, Switzerland">
+                    </map>
+                    <div class="polaroid-title">Matterhorn, Switzerland</div>
+                </div>
             </div>
         </div>
-
+        
         <h2>Local</h2>
-        <div class="dream-places">
-            <div class="place-item">
-                <img src="images/el-nido.jpg" usemap="#elNido">
-                <map name="elNido">
-                    <area shape="rect" coords="2,2,348,197" href="dream places/el-nido.html" target="newSpace" alt="El Nido, Palawan">
-                </map>
-                <h3>El Nido, Palawan</h3>
-                <p>Turquoise water, secret lagoons, and those dramatic limestone cliffs. El Nido looks like paradise. I would like to spend days island-hopping, snorkeling, and eating fresh seafood by the beach.</p>
-            </div>
-            <div class="place-item">
-                <img src="images/boracay.jpg" usemap="#boracay">
-                <map name="boracay">
-                    <area shape="circle" coords="150,100,96" href="dream places/boracay.html" target="newSpace" alt="Boracay">
-                </map>
-                <h3>Boracay</h3>
-                <p>White sand so fine it feels like powder, insane sunsets, and that lively beachfront vibe. Boracay seems like the perfect mix of relaxation and fun. I'd love to walk on their white sand beaches and experience the ambience.</p>
-            </div>
-            <div class="place-item">
-                <img src="images/batanes.jpg" usemap="#batanes">
-                <map name="batanes">
-                    <area shape="polygon" coords="341,180,315,195,288,183,256,192,224,181,204,190,161,176,135,191,89,171,60,194,22,165,7,119,40,92,21,58,43,44,25,13,69,7,105,20,138,7,160,25,188,9,217,29,245,11,279,34,303,12,337,34,323,68,338,87,319,114,337,132,320,157,342,177" href="dream places/batanes.html" target="newSpace" alt="Batanes">
-                </map>
-                <h3>Batanes</h3>
-                <p>Rolling hills, stone houses, and rugged coastlines make Batanes feel like a hidden gem. I'd rent a bike to explore the endless green landscapes and maybe meet some of the locals, known for their warmth and stories.</p>
+        <div class="collage-container">
+            <div class="collage">
+                <div class="polaroid" style="--rotation: 4deg; --z-index: 3;">
+                    <img src="images/el-nido.jpg" usemap="#elNido" alt="El Nido, Palawan">
+                    <map name="elNido">
+                        <area shape="rect" coords="0,0,280,200" href="dream places/el-nido.html" alt="El Nido, Palawan">
+                    </map>
+                    <div class="polaroid-title">El Nido, Palawan</div>
+                </div>
+                
+                <div class="polaroid" style="--rotation: -3deg; --z-index: 2;">
+                    <img src="images/boracay.jpg" usemap="#boracay" alt="Boracay, Philippines">
+                    <map name="boracay">
+                        <area shape="circle" coords="140,100,100" href="dream places/boracay.html" alt="Boracay">
+                    </map>
+                    <div class="polaroid-title">Boracay</div>
+                </div>
+                
+                <div class="polaroid" style="--rotation: 2deg; --z-index: 1;">
+                    <img src="images/batanes.jpg" usemap="#batanes" alt="Batanes, Philippines">
+                    <map name="batanes">
+                        <area shape="poly" coords="140,20,220,60,260,140,140,180,60,140,20,60" href="dream places/batanes.html" alt="Batanes">
+                    </map>
+                    <div class="polaroid-title">Batanes</div>
+                </div>
             </div>
         </div>
 
         <div align="center">
-            <div class="nav-buttons">
+            <div class="nav-buttons"> 
                 <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+                <br> 
+                <a href="CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
             </div>
-            <br><br>
-            <a href="https://mcjayversonnn.github.io/Landing-Page/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
         </div>
     </div>
 </body>

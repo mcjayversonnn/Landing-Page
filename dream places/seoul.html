@@ -2,150 +2,138 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Seoul - Dream Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seoul, South Korea - Dream Places</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <style>
-       body {
-            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
-            background-color: #000f20;
-            color: #EEF4ED;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-bar {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: #0B2545;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .nav-bar .brand {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #EEF4ED;
-            margin-right: 250px;
-        }
-
-        .nav-bar .links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .nav-bar a {
-            color: #EEF4ED;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .nav-bar a:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            margin-top: 80px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #EEF4ED;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 40px;
-        }
-
-        .content-section {
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .content-section p {
-            background-color: #22344b;
-		    padding: 15px;
-		    border-radius: 20px;
-		    margin-bottom: 20px;
-        }
-
-        .content-section img {
-            display: block;
-            margin: 20px auto;
-            max-width: 60%;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn {
-            background-color: #0B2545;
-            color: #EEF4ED;
-            padding: 12px 20px;
-            border-radius: 25px;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-            display: inline-block;
-            margin: 20px auto;
-        }
-
-        .btn:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-    </style>
+    <link rel="stylesheet" href="dream_places.css">
 </head>
 <body>
     <div class="nav-bar">
         <div class="brand">Mc. Jayverson Castro</div>
         <div class="links">
             <a href="../CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="../CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="../CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="../CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="../CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="../CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="../CASTRO_FILM_ITAD.html">My Kind of Film</a>
             <a href="../CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="../CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="../CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
-    <div class="container">
-        <h1>Seoul, South Korea</h1>
-        <div class="content-section">
-            <img src="../images/seoul.jpg" alt="Seoul">
-            <h2>Why This Place is Special to Me</h2>
-            <p>
-                Seoul is a vibrant city that perfectly blends modernity with tradition. From its bustling streets to its serene palaces, Seoul offers a unique charm. I am drawn to its rich culture, delicious food, and the warmth of its people.
-            </p>
+    
+    <div class="detail-container">
+        <div class="detail-header">
+            <h1>Seoul, South Korea</h1>
         </div>
-        <div class="content-section">
-            <h2>How to Get There</h2>
-            <p>
-                Seoul is easily accessible via Incheon International Airport, one of the busiest airports in the world. From the airport, you can take the AREX train, buses, or taxis to reach the city center.
-            </p>
+        
+        <div class="hero-section">
+            <a href="../images/seoul.jpg" target="display"><img src="../images/seoul.jpg" alt="Seoul, South Korea" class="detail-image"></a>
+            <div class="image-overlay">
+                <p class="image-caption">Seoul perfectly balances ancient traditions with cutting-edge technology and modern culture.</p>
+            </div>
         </div>
-        <div class="content-section">
-            <h2>Other Places to Visit in the Area</h2>
-            <p>
-                While in Seoul, don't miss visiting Gyeongbokgung Palace, Bukchon Hanok Village, and the vibrant streets of Myeongdong. For a panoramic view of the city, head to Namsan Seoul Tower. The Han River is also a great spot for relaxation and activities.
-            </p>
+        
+        <div class="content-wrapper">
+            <div class="main-content">
+                <div class="detail-section">
+                    <h3>The Dynamic Capital</h3>
+                    <p>
+                        Seoul, the capital city of South Korea, is a fascinating blend of ancient history and ultra-modern innovation.
+                        With a population of nearly 10 million people, this sprawling metropolis offers countless attractions ranging from
+                        centuries-old palaces and temples to futuristic skyscrapers and cutting-edge technology. As one of Asia's most
+                        dynamic cities, Seoul perfectly embodies the remarkable journey of South Korea from tradition to global trendsetter.
+                    </p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Why this place is special to me?</h3>
+                    <p>
+                        Seoul holds a unique place in my dreams for reasons that feel deeply personal. I first became interested in Seoul through Korean dramas and music, but what started as casual curiosity has evolved into genuine fascination with the city itself. What draws me most is the incredible contrast between tradition and innovation that seems woven into Seoul's very identity.
+                    </p>
+                    <p>
+                        The food culture of Seoul especially calls to me. I dream about sitting at a street food stall, trying tteokbokki (those spicy rice cakes that look so delicious in every K-drama) while chatting with locals. There's something intimate about sharing food that transcends language barriers, and I imagine Seoul as a place where every meal tells a story about the city's history and people.
+                    </p>
+                    <p>
+                        Seoul represents to me not just a destination, but a vibrant, living entity that embodies resilience and reinvention qualities I deeply admire and aspire to cultivate in my own life. It's a city that has transformed itself repeatedly while preserving its soul, and I can't help but feel that experiencing it firsthand would be transformative for me too.
+                    </p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>How to Get There?</h3>
+                    <p>
+                        Getting to Seoul is relatively straightforward through its world-class transportation system:
+                    </p>
+                    <ul>
+                        <li><strong>By Air:</strong> Most international visitors arrive at Incheon International Airport (ICN), one of Asia's major transportation hubs serving flights from around the world. The smaller Gimpo International Airport (GMP) primarily handles domestic flights and some short-haul international flights from nearby Asian countries.</li>
+                        <li><strong>From Incheon Airport to Seoul:</strong>
+                            <ul>
+                                <li><strong>AREX Train:</strong> The Airport Express Rail connects Incheon International Airport to Seoul Station in approximately 43 minutes (express) or 60 minutes (all-stop).</li>
+                                <li><strong>Airport Limousine Buses:</strong> Various routes cover different parts of Seoul, taking 60-90 minutes depending on traffic.</li>
+                                <li><strong>Taxi:</strong> Regular taxis and premium services are available, taking about 60 minutes to reach central Seoul depending on traffic.</li>
+                                <li><strong>Subway:</strong> Line 9 connects with the AREX line, offering an economical option to reach various parts of Seoul.</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <p>
+                        <strong>Getting Around Seoul:</strong> The city has an extensive and efficient public transportation system:
+                    </p>
+                    <ul>
+                        <li><strong>Subway:</strong> Seoul's subway system is one of the world's most comprehensive, clean, and punctual networks with English signage throughout.</li>
+                        <li><strong>Bus:</strong> An extensive network of color-coded buses (blue, green, red, yellow) serves different routes and distances.</li>
+                        <li><strong>Taxi:</strong> Abundant, safe, and relatively affordable, with many drivers using translation apps to assist foreign passengers.</li>
+                        <li><strong>T-Money Card:</strong> A rechargeable transportation card that works on all public transit and offers discounted transfer rates.</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Other Places to Visit in South Korea</h3>
+                    <p>
+                        While Seoul offers endless attractions, consider exploring these other remarkable destinations in South Korea:
+                    </p>
+                    <ul>
+                        <li><strong>Busan:</strong> South Korea's second-largest city offers beautiful beaches, the colorful Gamcheon Culture Village, delicious seafood, and the stunning Haedong Yonggungsa Temple built on coastal cliffs.</li>
+                        <li><strong>Jeju Island:</strong> A UNESCO World Heritage site known for its volcanic landscapes, beautiful beaches, waterfalls, and unique culture. Don't miss Hallasan (South Korea's highest mountain), the lava tubes, and women free-divers (haenyeo).</li>
+                        <li><strong>Gyeongju:</strong> Known as "the museum without walls," this ancient capital of the Silla Dynasty is filled with historical treasures including Bulguksa Temple, royal tombs, and Cheomseongdae Observatory.</li>
+                        <li><strong>Jeonju:</strong> Famous for its traditional hanok village with over 800 traditional Korean houses, it's also considered the food capital of Korea and the birthplace of bibimbap.</li>
+                        <li><strong>Seoraksan National Park:</strong> One of Korea's most beautiful mountain areas, offering spectacular hiking trails, Buddhist temples, and stunning fall foliage.</li>
+                        <li><strong>DMZ (Demilitarized Zone):</strong> The border area between North and South Korea provides a sobering but fascinating glimpse into Korean history and the ongoing division of the peninsula.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="detail-section">
+                    <h3>Dream Activities</h3>
+                    <ul>
+                        <li>Explore the grand Gyeongbokgung Palace in traditional hanbok attire</li>
+                        <li>Shop in the bustling markets of Myeongdong and Dongdaemun</li>
+                        <li>Experience Korean food culture in Gwangjang Market</li>
+                        <li>Hike Namsan Mountain and visit N Seoul Tower</li>
+                        <li>Stroll along the restored Cheonggyecheon Stream</li>
+                        <li>Visit trendy neighborhoods like Hongdae and Gangnam</li>
+                        <li>Experience a traditional Korean jimjilbang (bathhouse)</li>
+                        <li>Discover K-pop culture in areas like Apgujeong</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Best Time to Visit</h3>
+                    <p>
+                        Seoul is beautiful year-round, but the most pleasant seasons are spring (April-June) and fall (September-November). 
+                        Spring brings cherry blossoms and mild temperatures, while fall offers stunning foliage and clear skies. 
+                        Summers (June-August) can be hot, humid, and rainy with monsoon season. 
+                        Winters (December-February) are cold and dry, but the city transforms with festive lights and potential snow scenes.
+                    </p>
+                </div>
+            </div>
         </div>
+        
         <div align="center">
+            <div class="nav-buttons">
+            <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
             <a href="../CASTRO_DREAM-PLACES_ITAD.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Dream Places</a>
         </div>
     </div>

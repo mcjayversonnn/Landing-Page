@@ -2,151 +2,136 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>El Nido - Dream Places</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>El Nido, Palawan - Dream Places</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
-    <style>
-        body {
-            font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
-            background-color: #000f20;
-            color: #EEF4ED;
-            margin: 0;
-            padding: 0;
-        }
-
-        .nav-bar {
-            display: flex;
-            justify-content: flex-start;
-            align-items: center;
-            background-color: #0B2545;
-            padding: 10px 20px;
-            position: fixed;
-            top: 0;
-            width: 100%;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-        }
-
-        .nav-bar .brand {
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            font-size: 1.5em;
-            font-weight: bold;
-            color: #EEF4ED;
-            margin-right: 250px;
-        }
-
-        .nav-bar .links {
-            display: flex;
-            gap: 15px;
-            flex-wrap: wrap;
-        }
-
-        .nav-bar a {
-            color: #EEF4ED;
-            text-decoration: none;
-            font-weight: bold;
-            padding: 10px 10px;
-            border-radius: 5px;
-            transition: background-color 0.3s, color 0.3s;
-        }
-
-        .nav-bar a:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-
-        .container {
-            max-width: 1400px;
-            margin: 0 auto;
-            padding: 20px;
-            margin-top: 80px;
-        }
-
-        h1, h2 {
-            text-align: center;
-            font-family: Georgia, 'Times New Roman', Times, serif;
-            color: #EEF4ED;
-        }
-
-        h1 {
-            font-size: 3em;
-            margin-bottom: 50px;
-        }
-
-        h2 {
-            font-size: 2em;
-            margin-top: 40px;
-        }
-
-        .content-section {
-            margin-bottom: 40px;
-            line-height: 1.8;
-        }
-
-        .content-section p {
-            background-color: #22344b;
-		    padding: 15px;
-		    border-radius: 20px;
-		    margin-bottom: 20px;
-        }
-
-        .content-section img {
-            display: block;
-            margin: 20px auto;
-            max-width: 60%;
-            border-radius: 12px;
-            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
-        }
-
-        .btn {
-            background-color: #0B2545;
-            color: #EEF4ED;
-            padding: 12px 20px;
-            border-radius: 25px;
-            text-align: center;
-            font-weight: bold;
-            text-decoration: none;
-            transition: background-color 0.3s, color 0.3s;
-            display: inline-block;
-            margin: 20px auto;
-        }
-
-        .btn:hover {
-            background-color: #007bff;
-            color: #EEF4ED;
-        }
-    </style>
+    <link rel="stylesheet" href="dream_places.css">
 </head>
 <body>
     <div class="nav-bar">
         <div class="brand">Mc. Jayverson Castro</div>
         <div class="links">
             <a href="../CASTRO_LANDING-PAGE_ITAD.html">Home</a>
+            <a href="../CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
+            <a href="../CASTRO_SKILLS_ITAD.html">Skills</a>
+            <a href="../CASTRO_RESUME_ITAD.html">Resume</a>
+            <a href="../CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
+            <a href="../CASTRO_BEAT_ITAD.html">My Beat</a>
+            <a href="../CASTRO_FILM_ITAD.html">My Kind of Film</a>
             <a href="../CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
+            <a href="../CASTRO_BUCKET-LIST_ITAD.html">Bucket List</a>
+            <a href="../CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
-    <div class="container">
-        <h1>El Nido Palawan</h1>
-        <div class="content-section">
-            <img src="../images/el-nido.jpg" alt="El Nido">
-            <h2>Why This Place is Special to Me</h2>
-            <p>
-                El Nido is a paradise on earth with its turquoise waters, hidden lagoons, and dramatic limestone cliffs. It is a place where I can immerse myself in nature and enjoy the serenity of island life.
-            </p>
+    
+    <div class="detail-container">
+        <div class="detail-header">
+            <h1>El Nido, Palawan</h1>
         </div>
-        <div class="content-section">
-            <h2>How to Get There</h2>
-            <p>
-                El Nido is located in Palawan, Philippines. You can fly directly to El Nido Airport or take a flight to Puerto Princesa and then a van or bus to El Nido.
-            </p>
+        
+        <div class="hero-section">
+            <a href="../images/el-nido.jpg" target="display"><img src="../images/el-nido.jpg" alt="El Nido, Palawan" class="detail-image"></a>
+            <div class="image-overlay">
+                <p class="image-caption">Crystal-clear turquoise waters and dramatic limestone cliffs make El Nido one of the Philippines' most stunning destinations.</p>
+            </div>
         </div>
-        <div class="content-section">
-            <h2>Other Places to Visit in the Area</h2>
-            <p>
-                While in El Nido, explore the Big Lagoon, Small Lagoon, and Secret Beach. Island-hopping tours are a must to fully experience the beauty of this tropical paradise.
-            </p>
+        
+        <div class="content-wrapper">
+            <div class="main-content">
+                <div class="detail-section">
+                    <h3>Philippine Paradise</h3>
+                    <p>
+                        El Nido is a coastal town on the Philippine island of Palawan, renowned for its stunning limestone cliffs,
+                        crystal-clear turquoise waters, white-sand beaches, and vibrant coral reefs. Often referred to as "Heaven on Earth,"
+                        El Nido represents the quintessential tropical paradise that appears almost too beautiful to be real.
+                    </p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Why this place is special to me?</h3>
+                    <p>
+                        El Nido holds a treasured spot in my dreams as a place that seems to exist at the intersection of reality and fantasy. As someone who grew up surrounded by images of tropical paradises in magazines and movies, El Nido represents the real-world manifestation of those idealized visions a place where the water truly is that clear, the limestone cliffs really do dramatically from turquoise lagoons, and hidden beaches genuinely require swimming through small rock openings to discover.
+                    </p>
+                    <p>
+                        I'm also deeply attracted to the dual nature of El Nido how it offers both solitude and connection. I imagine spending mornings in quiet contemplation, kayaking through peaceful lagoons surrounded by towering cliffs, then enjoying evenings sharing fresh seafood and stories with fellow travelers and locals in beachside restaurants. This balance of introspection and community reflects the equilibrium I seek in my own life.
+                    </p>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>How to Get There?</h3>
+                    <p>
+                        Getting to El Nido requires some planning, but the journey is part of the adventure:
+                    </p>
+                    <ul>
+                        <li><strong>By Air to Palawan:</strong> First, fly to Puerto Princesa International Airport, which has regular flights from Manila, Cebu, and other major Philippine cities.</li>
+                        <li><strong>From Puerto Princesa to El Nido:</strong> 
+                            <ul>
+                                <li><strong>By Van:</strong> The most common option is a shared van transfer, which takes approximately 5-6 hours and costs around ₱600-700. Vans depart throughout the day from various terminals in Puerto Princesa.</li>
+                                <li><strong>By Bus:</strong> A more economical but slower option (7-8 hours), with both ordinary and air-conditioned buses available from San Jose Terminal.</li>
+                                <li><strong>Private Transfer:</strong> For more comfort and flexibility, private cars or vans can be arranged for about ₱4,000-6,000.</li>
+                            </ul>
+                        </li>
+                        <li><strong>Direct Flights:</strong> Alternatively, there are now direct flights from Manila to El Nido's Lio Airport via AirSWIFT, which is significantly faster but more expensive than flying to Puerto Princesa.</li>
+                        <li><strong>From Coron:</strong> If coming from Coron (another beautiful destination in Palawan), there are ferry services to El Nido taking approximately 3.5-4 hours.</li>
+                    </ul>
+                    <p>
+                        <strong>Getting Around El Nido:</strong> Once in El Nido, options include:
+                    </p>
+                    <ul>
+                        <li><strong>Tricycles:</strong> The main form of local transport for short distances within El Nido town.</li>
+                        <li><strong>Motorbike Rental:</strong> Available for around ₱500-700 per day for exploring independently.</li>
+                        <li><strong>Island Hopping Boats:</strong> Essential for visiting the stunning lagoons and beaches of Bacuit Bay through organized tours (A, B, C, D) or private boat rentals.</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Other Places to Visit in Palawan</h3>
+                    <p>
+                        While El Nido is often the highlight of a Palawan trip, the island offers many other incredible destinations worth exploring:
+                    </p>
+                    <ul>
+                        <li><strong>Coron:</strong> Famous for its limestone karst landscapes similar to El Nido but with the added attraction of World War II Japanese shipwrecks, making it one of the world's best wreck diving destinations.</li>
+                        <li><strong>Puerto Princesa Underground River:</strong> A UNESCO World Heritage Site and one of the New 7 Wonders of Nature, this 8.2km navigable underground river features stunning cave formations.</li>
+                        <li><strong>Port Barton:</strong> A quieter alternative to El Nido, offering beautiful beaches, island hopping opportunities, and a more laid-back atmosphere with fewer crowds.</li>
+                        <li><strong>San Vicente and Long Beach:</strong> Home to the 14km Long Beach, one of the longest white sand beaches in the Philippines, still relatively undeveloped and pristine.</li>
+                        <li><strong>Balabac Islands:</strong> For the more adventurous traveler, this southern archipelago of Palawan offers some of the most untouched beaches and clearest waters in the Philippines.</li>
+                        <li><strong>Tubbataha Reefs Natural Park:</strong> For diving enthusiasts, this remote UNESCO World Heritage Site is one of the world's premier diving destinations, accessible only by liveaboard boats from Puerto Princesa during specific seasons.</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="sidebar">
+                <div class="detail-section">
+                    <h3>Dream Activities</h3>
+                    <ul>
+                        <li>Island hop through the breathtaking Bacuit Archipelago</li>
+                        <li>Swim in the Big and Small Lagoons</li>
+                        <li>Discover the hidden beauty of Secret Beach</li>
+                        <li>Snorkel among vibrant coral gardens</li>
+                        <li>Kayak through peaceful lagoons</li>
+                        <li>Hike to Taraw Peak for a panoramic view</li>
+                        <li>Relax on the pristine beaches of Nacpan</li>
+                        <li>Experience spectacular sunsets with the limestone cliffs</li>
+                    </ul>
+                </div>
+                
+                <div class="detail-section">
+                    <h3>Best Time to Visit</h3>
+                    <p>
+                        The ideal time to visit El Nido is during the dry season from November to May, with the best weather typically
+                        occurring between February and April. This period offers sunny days with calm seas, perfect for island hopping
+                        and water activities. The shoulder months (November-December and May) offer fewer crowds while still providing
+                        generally favorable weather conditions.
+                    </p>
+                </div>
+            </div>
         </div>
+        
         <div align="center">
-            <a href="../CASTRO_DREAM-PLACES_ITAD.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Dream Places</a>
+            <div class="nav-buttons">
+                <a href="#top" class="btn"><i class="fas fa-arrow-up"></i> Go Top</a>
+                <a href="../CASTRO_DREAM-PLACES_ITAD.html" class="btn"><i class="fas fa-arrow-left"></i> Back to Dream Places</a>
+            </div>
         </div>
     </div>
 </body>

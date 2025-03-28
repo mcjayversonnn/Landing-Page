@@ -2,8 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="utf-8">
-    <title>RESUME</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Resume - Mc. Jayverson Castro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -11,25 +10,17 @@
         body {
             color: #EEF4ED;
             background-color: #000f20;
-            font-family: Tahoma, Geneva, Verdana, sans-serif;
+            font-family: Arial, Tahoma, Geneva, Verdana, sans-serif;
             text-align: justify;
         }
 
-        .resume-header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0B2545;
+        h1 {
+            font-size: 3.5em;
+            margin-bottom: 50px;
             color: #EEF4ED;
-            border-bottom: 5px solid #13315C;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 80px;
-        }
-
-        .resume-header h1 {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            text-align: center;
         }
 
         h2 {
@@ -41,16 +32,31 @@
         }
 
         .container {
-            max-width: 1200px;
+            max-width: 1400px;
             margin: 0 auto;
-            padding: 20px;
+            padding: 100px 20px 50px;
         }
+
 
         .content {
             padding: 20px;
             background-color: #22344b;
             border-radius: 10px;
             margin-bottom: 20px;
+        }
+
+        .content p {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+            color: #EEF4ED;
+            text-align: justify;
+        }
+
+        p {
+            font-size: 1.2em; 
+            margin-top: 10px; 
+            color: #EEF4ED; 
+            text-align: center;
         }
 
         ul, ol {
@@ -95,6 +101,7 @@
 			right: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -124,6 +131,16 @@
             background-color: #007bff;
             color: #EEF4ED;
         }
+
+        .profile-image {
+            position: absolute;
+            top: 120px;
+            right: 50px;
+            width: 170px;
+            height: 170px;
+            border: 3px solid #EEF4ED;
+            object-fit: cover;
+        }
     </style>
 </head>
 <body>
@@ -134,7 +151,7 @@
             <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
             <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
             <a href="CASTRO_RESUME_ITAD.html">Resume</a>
-            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a> <!-- Fixed link -->
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a>
             <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
             <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
             <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
@@ -142,13 +159,21 @@
             <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
-    <div class="resume-header">
-        <h1>Resume of Castro Mc. Jayverson P.</h1>
-    </div>
     <div class="container">
+        <img src="images/2by2.jpg" alt="Profile Picture" class="profile-image">
+        <h1>Resume of Castro Mc. Jayverson P.</h1>
+        <p> 19 Years Old | 2nd-Year BS Information Technology Student<br>
+            University of the East<br>
+            <i class="fas fa-map-marker-alt"></i> 1445 Sevilla Ext. Tondo Manila | 
+            <i class="fas fa-envelope"></i> <a href="mailto:mcjayversoncastro@gmail.com" style="color: #EEF4ED; text-decoration: none;">mcjayversoncastro@gmail.com</a> | 
+            <i class="fas fa-phone"></i> 0927-857-7389 | 
+            <i class="fab fa-github"></i> <a href="https://github.com/mcjayversonnn" target="_blank" style="color: #EEF4ED; text-decoration: none;">GitHub</a> | 
+            <i class="fab fa-linkedin"></i> <a href="https://www.linkedin.com/in/mc-jayverson-castro-675236356/" target="_blank" style="color: #EEF4ED; text-decoration: none;">LinkedIn</a>
+        </p>
+
         <h2>About Me</h2>
         <div class="content">
-            <p>Hi, I'm Mc. Jayverson Castro, currently 19 years old, a highly motivated IT student at University of the East. Currently pursuing Bachelor of Science in Information Technology. I'm passionate about technology and learning new programming languages.</p>
+            <p>A highly motivated 2nd-year IT student with a strong passion for technology and designing. Eager to expand my knowledge in programming, software and web development, and IT systems. Currently exploring new programming languages and frameworks while gaining hands-on experience through coursework and personal projects.</p>
         </div>
         <h2>Technical IT Skills</h2>
         <div class="content">

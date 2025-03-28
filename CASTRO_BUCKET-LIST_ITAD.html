@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Bucket List</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
+    <title>Bucket List - Mc. Jayverson Castro</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
         body {
             font-family: Arial, Tahoma, Verdana, Helvetica, sans-serif;
@@ -12,6 +12,7 @@
             color: #EEF4ED;
             margin: 0;
             padding: 0;
+            line-height: 1.5;
         }
 
         .nav-bar {
@@ -24,6 +25,7 @@
             top: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -56,77 +58,206 @@
 
         .container {
             max-width: 1200px;
-            margin: 0 auto;
+            margin: 80px auto 0;
             padding: 20px;
-            margin-top: 80px;
         }
 
         h1 {
-            font-size: 3em;
-            margin-bottom: 30px;
+            font-size: 4em;
+            margin-bottom: 50px;
             color: #EEF4ED;
             font-family: Georgia, 'Times New Roman', Times, serif;
             font-weight: bold;
             text-align: center;
         }
 
-        .bucket-list {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-            justify-content: center;
-        }
-
-        .bucket-item {
-            background-color: #0B2545;
-            color: #EEF4ED;
-            padding: 20px;
-            border-radius: 10px;
-            width: calc(33.333% - 20px);
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            text-align: center;
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-
-        .bucket-item:hover {
-            transform: scale(1.05);
-            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
-        }
-
-        .bucket-item i {
+        h2 {
             font-size: 2em;
-            margin-bottom: 10px;
-            color: #FFD700;
+            margin-bottom: 20px;
+            color: #EEF4ED;
+            font-family: Georgia, 'Times New Roman', Times, serif;
+            text-align: left;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #A4F0F9;
+            display: inline-block;
         }
 
-        .bucket-item h3 {
-            font-size: 1.5em;
-            margin-bottom: 10px;
+        h3 {
+            font-size: 1.4em;
+            margin-bottom: 12px;
+            color: #A4F0F9;
+            font-weight: bold;
         }
 
-        .bucket-item p {
-            font-size: 1em;
+        p {
+            margin-bottom: 15px;
             line-height: 1.6;
         }
 
         .btn {
             background-color: #0B2545;
             color: #EEF4ED;
-            padding: 8px;
+            padding: 10px;
             border-radius: 20px;
             text-align: center;
             font-weight: bold;
             text-decoration: none;
             transition: background-color 0.3s, color 0.3s;
-            margin-top: 30px;
             display: inline-block;
+            margin: 5px;
         }
 
         .btn:hover {
             background-color: #007bff;
             color: #EEF4ED;
-            text-decoration: none;
         }
+
+        header {
+            color: #EEF4ED;
+            padding: 2rem 0;
+            text-align: center;
+            position: relative;
+        }
+
+        .header-content {
+            position: relative;
+            z-index: 1;
+        }
+
+        .header-content p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 0 auto 1.5rem;
+        }
+
+        .intro {
+            text-align: center;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+
+        .stat-item {
+            flex: 1;
+            text-align: center;
+            padding: 1.5rem;
+            margin: 0.5rem;
+            background-color: #13315c;
+            border-radius: 8px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .stat-number {
+            font-size: 2.5rem;
+            font-weight: bold;
+            color: #EEF4ED;
+            margin-bottom: 0.5rem;
+        }
+        
+        .bucket-list-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+            gap: 20px;
+        }
+
+        .bucket-item {
+            background-color: #13315c;
+            border-radius: 8px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            position: relative;
+            border: 2px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .bucket-item img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            display: block;
+        }
+
+        .bucket-status {
+            position: absolute;
+            top: 12px;
+            right: 12px;
+            padding: 6px 12px;
+            border-radius: 20px;
+            font-size: 0.75rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            color: white;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+
+        .status-completed {
+            background-color: #52b788;
+        }
+
+        .status-in-progress {
+            background-color: #f8961e;
+        }
+
+        .status-pending {
+            background-color: #6c757d;
+        }
+
+        .bucket-content {
+            padding: 1.5rem;
+        }
+
+        .bucket-icons {
+            margin-top: 1rem;
+            display: flex;
+            gap: 1rem;
+            color: #97b9e7;
+        }
+
+        .bucket-icons i {
+            font-size: 1.1rem;
+        }
+
+        .progress-container {
+            margin-top: 1.2rem;
+            background-color: rgba(233, 236, 239, 0.2);
+            border-radius: 5px;
+            height: 8px;
+            overflow: hidden;
+        }
+
+        .progress-bar {
+            height: 100%;
+            border-radius: 5px;
+        }
+
+        .progress-completed {
+            width: 100%;
+            background-color: #52b788;
+        }
+
+        .progress-in-progress {
+            background-color: #f8961e;
+        }
+
+        .progress-pending {
+            background-color: #6c757d;
+        }
+
+        .progress-25 {
+            width: 25%;
+        }
+
+        .progress-50 {
+            width: 50%;
+        }
+
+        .progress-75 {
+            width: 75%;
+        }
+
     </style>
 </head>
 <body>
@@ -146,42 +277,224 @@
         </div>
     </div>
     <div class="container">
-        <h1>My Bucket List</h1>
-        <div class="bucket-list">
-            <div class="bucket-item">
-                <i class="fas fa-plane"></i>
-                <h3>Travel to Japan</h3>
-                <p>Experience the cherry blossoms, visit Mount Fuji, and explore Tokyo's vibrant culture.</p>
+        <header>
+            <div class="header-content">
+                <h1>My Bucket List Journey</h1>
             </div>
-            <div class="bucket-item">
-                <i class="fas fa-graduation-cap"></i>
-                <h3>Earn a Master's Degree</h3>
-                <p>Pursue higher education in Information Technology to deepen my knowledge and skills.</p>
+        </header>
+
+        <section class="section">
+            <div class="container intro">
+                <h2>About My Bucket List</h2>
+                <p>Life is a grand adventure filled with endless possibilities. This is my personal catalog of dreams, aspirations, and experiences I wish to embrace before my time on this beautiful planet comes to an end. Some are grand adventures, others are simple pleasures, but each represents a piece of the life I want to live.</p>
+                
+                <div class="stats">
+                    <div class="stat-item">
+                        <div class="stat-number">1</div>
+                        <div class="stat-label">Completed</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">In Progress</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">4</div>
+                        <div class="stat-label">Pending</div>
+                    </div>
+                    <div class="stat-item">
+                        <div class="stat-number">9</div>
+                        <div class="stat-label">Total Dreams</div>
+                    </div>
+                </div>
             </div>
-            <div class="bucket-item">
-                <i class="fas fa-camera"></i>
-                <h3>Start a Photography Blog</h3>
-                <p>Share my passion for capturing moments and landscapes through a professional blog.</p>
+        </section>
+
+        <section class="section">
+            <div class="container">
+                <h2>My Bucket List</h2>      
+                <div class="bucket-list-grid">
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/travel.jpg" target="display"><img src="images/travel.jpg" alt="Travel International"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-pending">Pending</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Travel International</h3>
+                            <p>Visit at least 10 countries across 5 continents, immersing myself in diverse cultures, cuisines, and landscapes. So far I've experienced travelled on local places.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-globe-americas"></i>
+                                <i class="fas fa-plane"></i>
+                                <i class="fas fa-camera"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-25"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/masters-degree.jpg" target="display"><img src="images/masters-degree.jpg" alt="Earns a Masters Degree"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-in-progress">In Progress</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Earn a Master's Degree</h3>
+                            <p>Further my education by earning a Master's degree in my field of passion, expanding my knowledge and opening new career opportunities.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-graduation-cap"></i>
+                                <i class="fas fa-book"></i>
+                                <i class="fas fa-university"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-75"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/photography.jpg" target="display"><img src="images/photography.jpg" alt="Photography Blog"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-pending">Pending</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Start a Photography Blog</h3>
+                            <p>Create and maintain a photography blog showcasing my unique perspective through the lens, sharing stories and techniques with fellow enthusiasts.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-camera-retro"></i>
+                                <i class="fas fa-laptop"></i>
+                                <i class="fas fa-share-alt"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-25"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/long-distance.jpg" target="display"><img src="images/long-distance.jpg" alt="Visit Long Distance Girlfriend"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-in-progress">In Progress</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>See My Long Distance Girlfriend</h3>
+                            <p>Cross oceans and borders to finally be with my long-distance girlfriend, turning our digital connection into real-life memories and experiences together.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-heart"></i>
+                                <i class="fas fa-plane-departure"></i>
+                                <i class="fas fa-map-marked-alt"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                                       
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/learn-new-language.jpeg" target="display"><img src="images/learn-new-language.jpeg" alt="Learn a New Language"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-in-progress">In Progress</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Learn a New Language</h3>
+                            <p>Become fluent in a foreign language to connect more deeply with different cultures and open up new perspectives on the world around me.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-language"></i>
+                                <i class="fas fa-globe"></i>
+                                <i class="fas fa-comments"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-50"></div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/run-marathon.jpg" target="display"><img src="images/run-marathon.jpg" alt="Run a Marathon"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-completed">Completed</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Run a Marathon</h3>
+                            <p>Pushed my physical and mental limits to complete a full marathon, proving to myself that with dedication and training, I can accomplish extraordinary feats.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-running"></i>
+                                <i class="fas fa-stopwatch"></i>
+                                <i class="fas fa-medal"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-completed"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/learn-instrument.jpg" target="display"><img src="images/learn-instrument.jpg" alt="Learn to Play an Instrument"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-in-progress">In Progress</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Learn to Play an Instrument</h3>
+                            <p>Master playing the guitar or piano, exploring my musical creativity and bringing the joy of music into my life and others.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-music"></i>
+                                <i class="fas fa-guitar"></i>
+                                <i class="fas fa-headphones-alt"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-50"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/skydiving.jpg" target="display"><img src="images/skydiving.jpg" alt="Go Skydiving"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-pending">Pending</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Go Skydiving</h3>
+                            <p>Experience the ultimate adrenaline rush by jumping out of an airplane and freefalling through the clouds, conquering my fears in the process.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-plane"></i>
+                                <i class="fas fa-parachute-box"></i>
+                                <i class="fas fa-wind"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-25"></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bucket-item">
+                        <div class="bucket-image">
+                            <a href="images/northern-lights.jpg" target="display"><img src="images/northern-lights.jpg" alt="Witness the Northern Lights"></a>
+                            <div class="bucket-overlay"></div>
+                            <div class="bucket-status status-pending">Pending</div>
+                        </div>
+                        <div class="bucket-content">
+                            <h3>Witness the Northern Lights</h3>
+                            <p>Travel to Iceland or Norway to witness the breathtaking aurora borealis dancing across the night sky, a true natural wonder of our world.</p>
+                            <div class="bucket-icons">
+                                <i class="fas fa-moon"></i>
+                                <i class="fas fa-snowflake"></i>
+                                <i class="fas fa-mountain"></i>
+                            </div>
+                            <div class="progress-container">
+                                <div class="progress-bar progress-in-progress progress-25"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
             </div>
-            <div class="bucket-item">
-                <i class="fas fa-code"></i>
-                <h3>Build a Tech Startup</h3>
-                <p>Launch a company focused on innovative software solutions for businesses.</p>
-            </div>
-            <div class="bucket-item">
-                <i class="fas fa-hiking"></i>
-                <h3>Climb a Mountain</h3>
-                <p>Challenge myself physically and mentally by hiking a major mountain.</p>
-            </div>
-            <div class="bucket-item">
-                <i class="fas fa-book"></i>
-                <h3>Write a Book</h3>
-                <p>Document my journey and share insights on personal growth and technology.</p>
-            </div>
-        </div>
-        <div align="center">
-            <a href="https://mcjayversonnn.github.io/Landing-Page/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
-        </div>
+        </section>
     </div>
 </body>
 </html>

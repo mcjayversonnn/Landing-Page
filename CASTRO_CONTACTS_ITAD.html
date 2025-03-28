@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CONTACT</title>
+    <title>Contact - Mc. Jayverson Castro</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" />
     <style>
         body {
@@ -12,21 +12,17 @@
             font-family: Tahoma, Geneva, Verdana, sans-serif;
             text-align: justify;
         }
-        .contact-header {
-            text-align: center;
-            padding: 20px;
-            background-color: #0B2545;
+       
+        h1 {
+            font-size: 4em;
+            margin-top: 100px;
+            margin-bottom: 50px;
             color: #EEF4ED;
-            border-bottom: 5px solid #13315C;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 80px;
-        }
-        .contact-header h1 {
             font-family: Georgia, 'Times New Roman', Times, serif;
-            margin: 0;
-            font-size: 2.5em;
-            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+            font-weight: bold;
+            text-align: center;
         }
+
         .contact-container {
             display: flex;
             justify-content: space-around;
@@ -55,6 +51,7 @@
             margin-bottom: 10px;
         }
         .contact-form button {
+            font-size: 16px;
             background-color: #0B2545;
             color: #EEF4ED;
             padding: 10px;
@@ -106,6 +103,7 @@
             right: 0;
             width: 100%;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            z-index: 1000;
         }
 
         .nav-bar .brand {
@@ -136,6 +134,12 @@
             color: #EEF4ED;
         }
 
+        .social-links {
+            display: flex;
+            gap: 30px;
+            margin-top: 30px;
+        }
+
     </style>
 </head>
 <body>
@@ -146,7 +150,7 @@
             <a href="CASTRO_BIOGRAPHY_ITAD.html">About Me</a>
             <a href="CASTRO_SKILLS_ITAD.html">Skills</a>
             <a href="CASTRO_RESUME_ITAD.html">Resume</a>
-            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a> <!-- Fixed link -->
+            <a href="CASTRO_PHOTO-DUMP_ITAD.html">Photo Gallery Dump</a> 
             <a href="CASTRO_BEAT_ITAD.html">My Beat</a>
             <a href="CASTRO_FILM_ITAD.html">My Kind of Film</a>
             <a href="CASTRO_DREAM-PLACES_ITAD.html">Dream Places</a>
@@ -154,14 +158,23 @@
             <a href="CASTRO_CONTACTS_ITAD.html">Contact</a>
         </div>
     </div>
-    <div class="contact-header">
+
         <h1>Contact Me</h1>
-    </div>
     <div class="contact-container">
         <div class="contact-content">
             <h2>Get in Touch</h2>
             <p>If you have any questions, feel free to reach out to me via email.</p>
             <p>Email: <a href="mailto:mcjayversoncastro@gmail.com">mcjayversoncastro@gmail.com</a></p>
+            <div class="social-links">
+                <a href="https://facebook.com/yourprofile" target="_blank"><i class="fab fa-facebook fa-2x"></i>
+                </a>
+                <a href="https://instagram.com/yourprofile" target="_blank"><i class="fab fa-instagram fa-2x"></i>
+                </a>
+                <a href="https://github.com/mcjayversonnn" target="_blank"><i class="fab fa-github fa-2x"></i>
+                </a>
+                <a href="https://linkedin.com/in/mcjayversonnn" target="_blank"><i class="fab fa-linkedin fa-2x"></i>
+                </a>
+            </div>
         </div>
         <div class="contact-form">
             <h2>Send a Message</h2>
@@ -177,7 +190,9 @@
         </div>
     </div>
     <div class="contact-footer">
-        <a href="https://mcjayversonnn.github.io/Landing-Page/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        <div align="center">
+            <a href="https://mcjayversonnn.github.io/Landing-Page/CASTRO_LANDING-PAGE_ITAD.html" class="btn"><i class="fas fa-home"></i> Home</a>
+        </div>
     </div>
 </body>
 </html>
